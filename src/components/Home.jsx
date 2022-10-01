@@ -1,0 +1,37 @@
+import React from 'react'
+import cv from '../assets/resume.pdf'
+import ME from '../assets/profilepic.png'
+import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import './Home.css'
+
+const Home = () => {
+  return (
+    <header id='home'>
+        <div className="container header_container">
+          <h5>Hello, I'm</h5>
+          <h1>Minji Kim</h1>
+          <h5>Fullstack Developer</h5>
+
+          <div className="cta">
+            <a href ={cv} download className='btn'>Download CV</a>
+            <a href = "#contact" className='btn btn-primary'>Contact Me</a>
+          </div>
+
+          <div className="socials">
+            <a href = "http://linkedin.com" target = "_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+            <a href = "http://github.com" target = "_blank" rel="noopener noreferrer"><BsGithub/></a>
+          </div>
+
+          <div className="me">
+            <div className="me_image">
+              <img src ={ME} alt= "me" />
+            </div>
+          </div>
+          <h5 className='scroll_down'>Scroll Down</h5>
+
+        </div>
+    </header>
+  )
+}
+
+export default Home

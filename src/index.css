@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 ;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --color-bg: #22223B;
+    --color-ft: #4A4E69;
+    --color-pink: #C9ADA7;
+    --color-purple: #9A8C98;
+    --color-light: #F2E9E4;
+    --color-dark: #262626;
+
+    --transition: all 400ms ease;
+
+    --container-width-l: 75%;
+    --container-width-m: 86%;
+    --container-width-s: 80%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+body{
+    font-family: "Quicksand" , sans-serif;
+    background-color: var(--color-bg);
+    color: white;
+    line-height: 1.6;
+}
+
+.container{
+    width: var(--container-width-l);
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 1rem;
+    padding-top:3rem;
+    height: 100vh;
+    overflow: scroll;
+}
+
+section > h2, section >h5 {
+    text-align: center;
+}
+section > h2 {
+    margin-bottom: 3rem;
+}
+section > h5 {
+    color: var(--color-light)
+}
+
+a{
+    color: var(--color-pink);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: white;
+}
+
+.btn {
+    width: max-content;
+    display: block;
+    color: var(--color-pink);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-pink);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: white;
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-purple);
+    color: var(--color-light);
+    border: var(--color-purple);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-m);
+    }
+
+    section{
+        margin-top: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-s);
+    }
+
+    section > h2{
+        margin-bottom: 2rem;
+    }
 }
