@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HelloMinji/static/css/main.3e496518.css",
+    "main.js": "/HelloMinji/static/js/main.8a9012cf.js",
+    "static/media/profilepic.png": "/HelloMinji/static/media/profilepic.e0c4d6edaed343695dbd.png",
+    "static/media/project1.png": "/HelloMinji/static/media/project1.46809d055943b38aa9a1.png",
+    "static/media/resume.pdf": "/HelloMinji/static/media/resume.551e170efe9192566ab4.pdf",
+    "index.html": "/HelloMinji/index.html",
+    "main.3e496518.css.map": "/HelloMinji/static/css/main.3e496518.css.map",
+    "main.8a9012cf.js.map": "/HelloMinji/static/js/main.8a9012cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e496518.css",
+    "static/js/main.8a9012cf.js"
+  ]
+}
