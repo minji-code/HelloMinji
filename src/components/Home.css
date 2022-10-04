@@ -37,7 +37,7 @@
     background-color: var(--color-purple);
     transform: rotate(-10deg);
     width: 25vw;
-    max-width: 450px;
+    width: 350px;
     min-width: 350px;
     height: 44vh;
     border-radius: 15px;
@@ -48,7 +48,7 @@
 .me_image{
     background-color: var(--color-pink);
     width: 25vw;
-    max-width: 450px;
+    width: 350px;
     min-width: 350px;
     height: 45vh;
     border-radius: 15px;
