@@ -8,7 +8,7 @@ const Experience = () => {
       <h5>Working Experience</h5>
       <h2>Short Resume</h2>
       <div className="experience_btn">
-      <a href ={cv} download className='btn'>Download CV</a>
+      <a href ={cv} download className='btn'>Download Resume</a>
       </div>
       
       <div className="container experience_container">
