@@ -1,6 +1,5 @@
 import React from 'react'
 import './Project.css'
-import ComingSoon from '../assets/ComingSoon.png'
 import IMG1 from '../assets/project1.png'
 
 
@@ -27,8 +26,8 @@ const Project = () => {
 
           <article className='project_item'>
           <div className="project_item_wrap">
-            <div className="project_item_image">
-                <img src = {ComingSoon} alt=''/>
+            <div className="project_item_comingsoon">
+                Something Exciting
             </div>
             <h4>project title</h4>
             <div className='project_btn'>
@@ -40,8 +39,8 @@ const Project = () => {
 
           <article className='project_item'>
           <div className="project_item_wrap">
-            <div className="project_item_image">
-                <img src = {ComingSoon} alt=''/>
+            <div className="project_item_comingsoon">
+                Something Exciting
             </div>
             <h4>Coming Soon...</h4>
             <div className='project_btn'>
