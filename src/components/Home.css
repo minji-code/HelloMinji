@@ -1,56 +1,56 @@
-header {
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+.home_container {
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    ' b b b '
+    'socials main sidebar';
+    justify-items: center;
+
 }
 
-.header_container{
-    text-align: center;
-    height: 100%;
-    position: relative;
-}
-
-.cta {
-    margin-top: 2.5rem;
+.btns {
+    grid-area: b;
+    place-self: center;
     display: flex;
     gap: 1rem;
-    justify-content: center;
 }
 
 .socials {
+    grid-area: socials;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    position: absolute;
-    left: 0;
-    bottom: 40vh;
+}
+.scroll_down{
+    grid-area: sidebar;
+    transform: rotate(90deg);
+    font-weight: 200;
+    align-self: center;
 }
 
-.social::after{
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background-color: var(--color-pink);
-}
 
 .me{
+    grid-area: main;
     background-color: var(--color-purple);
     transform: rotate(-10deg);
-    width: 20rem;
-    height: 28rem;
-    position: absolute;
+    width: 25vw;
+    max-width: 450px;
+    min-width: 350px;
+    height: 44vh;
     border-radius: 15px;
-    margin-top: 3.5rem;
-    left: calc(50% - 10rem);
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
 .me_image{
     background-color: var(--color-pink);
-    width: 20rem;
-    height: 28rem;
-    position: absolute;
-    left: calc(50% - 10rem);
+    width: 25vw;
+    max-width: 450px;
+    min-width: 350px;
+    height: 45vh;
     border-radius: 15px;
     overflow: hidden;
     padding: 3rem 0rem 0rem 0rem;
@@ -59,17 +59,21 @@ header {
     justify-content: center;
 }
 
-.scroll_down{
-    position: absolute;
-    right: -3rem;
-    bottom: 40vh;
-    transform: rotate(90deg);
-    font-weight: 200;
-}
+
 
 @media screen and (max-width: 1024px) {
-    .header{
-        height: 68vh;
+    .home_container{
+        display: grid;
+        grid-template-columns: auto 95%;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        ' b b '
+        'socials main ';
+        justify-items: center;
+    }
+
+    .me{
+        margin-right: 7rem;
     }
     
     .scroll_down{
@@ -78,10 +82,14 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .header {
-        height: 100vh;
+
+    .me{
+        width: min(60vw);
     }
 
+    .me_image{
+        width: min(60vw);
+    }
     .socials, .scroll_down {
         display: none;
     }

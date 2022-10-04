@@ -60,7 +60,7 @@ section {
     overflow: scroll;
 }
 
-section > h2, section >h5 {
+section > h2, section >h5, section >h1{
     text-align: center;
 }
 section > h2 {
@@ -81,6 +81,7 @@ a:hover {
 
 .btn {
     width: max-content;
+    height: fit-content;
     display: block;
     color: var(--color-pink);
     padding: 0.75rem 1.2rem;

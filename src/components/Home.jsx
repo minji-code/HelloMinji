@@ -6,14 +6,15 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <header id='home'>
-        <div className="container header_container">
+    <section id='home'>
           <h5>Hello, I'm</h5>
           <h1>Minji Kim</h1>
-          <h5>Fullstack Developer</h5>
+          <h5>Fullstack Developer</h5> 
 
-          <div className="cta">
-            <a href ={cv} download className='btn'>Download CV</a>
+        <div className="container home_container">
+
+          <div className="btns">
+            <a href ={cv} download className='btn'>Download Resume</a>
             <a href = "#contact" className='btn btn-primary'>Contact Me</a>
           </div>
 
@@ -27,10 +28,12 @@ const Home = () => {
               <img src ={ME} alt= "me" />
             </div>
           </div>
-          <h5 className='scroll_down'>Scroll Down</h5>
 
-        </div>
-    </header>
+          <h5 className='scroll_down'>Scroll Down</h5>
+          
+          </div>
+        
+    </section>
   )
 }
 
