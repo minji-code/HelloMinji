@@ -56,7 +56,7 @@ h1{
 section {
     margin-top: 1rem;
     padding-top:3rem;
-    height: fit-content;
+    height: max-content;
     overflow: scroll;
 }
 
