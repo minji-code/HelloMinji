@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/HelloMinji/static/css/main.ea2201a2.css",
-    "main.js": "/HelloMinji/static/js/main.c0e533ad.js",
+    "main.css": "/HelloMinji/static/css/main.2c06f08e.css",
+    "main.js": "/HelloMinji/static/js/main.698efc70.js",
     "static/media/profilepic.png": "/HelloMinji/static/media/profilepic.e0c4d6edaed343695dbd.png",
     "static/media/project1.png": "/HelloMinji/static/media/project1.46809d055943b38aa9a1.png",
     "static/media/resume.pdf": "/HelloMinji/static/media/resume.551e170efe9192566ab4.pdf",
     "index.html": "/HelloMinji/index.html",
-    "main.ea2201a2.css.map": "/HelloMinji/static/css/main.ea2201a2.css.map",
-    "main.c0e533ad.js.map": "/HelloMinji/static/js/main.c0e533ad.js.map"
+    "main.2c06f08e.css.map": "/HelloMinji/static/css/main.2c06f08e.css.map",
+    "main.698efc70.js.map": "/HelloMinji/static/js/main.698efc70.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea2201a2.css",
-    "static/js/main.c0e533ad.js"
+    "static/css/main.2c06f08e.css",
+    "static/js/main.698efc70.js"
   ]
 }
