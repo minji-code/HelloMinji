@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
     overflow: hidden;
     align-self: center;
 }
@@ -43,7 +43,7 @@
 .timeline{
     position: relative;
     width: 50vw;
-    margin-left: 9rem;
+    margin-left: 5rem;
 }
 
 /* verticle line */
@@ -88,7 +88,7 @@
 }
 
 .tl_right::after{
-    left:-2.5%;
+    left:-1.7%;
 }
 
 .tl_content{

@@ -12,6 +12,9 @@
     min-width: 270px;
 }
 
+.project_item:hover{
+    background-color: var(--color-bg);
+}
 .project_item_wrap{
     background-color: var(--color-light);
     padding: 1.3rem;
@@ -20,6 +23,11 @@
     position: inherit;
     left: 1rem;
     bottom: 1rem;
+    transition: var(--transition);
+}
+
+.project_item_wrap:hover{
+    box-shadow: var(--color-pink) 0px 0px 5px 8px;
 }
 
 .project_item_image{
