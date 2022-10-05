@@ -1,91 +1,91 @@
 import React from 'react'
 import cv from '../assets/resume.pdf'
+import{DiHtml5, DiCss3, DiJavascript, DiReact, DiMysql, DiGithubBadge} from 'react-icons/di'
+import {FaPython, FaJava, FaFigma} from 'react-icons/fa'
+import {SiCanva, SiAdobeillustrator} from 'react-icons/si'
 import './Experience.css'
+import {Navigation} from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Experience = () => {
+
   return (
     <section id='experience'>
       <h5>Working Experience</h5>
-      <h2>Short Resume</h2>
+      <h2>What I Can Do</h2>
       <div className="experience_btn">
       <a href ={cv} download className='btn'>Download Resume</a>
       </div>
-      
       <div className="container experience_container">
-      <div className="timeline">
-
-          <div className="wrap tl_right">
-          <div className="tl_content">
-            <h4>2020-2022</h4>
-            <h3><b>OneTrust, LLC</b></h3>
-            <h4>Instructional Design Consultant</h4>
-            <h5>Developed and manage instructional materials. 
-              Planned and manage meetings with clients and collaborations 
-              with multiple teams across. </h5>
-          </div>
-          </div>
-
-          <div className="wrap tl_left">
-          <div className="tl_content">
-            <h4>2019</h4>
-            <h3><b>Georgia Institue of Technology</b></h3>
-            <h5>Bachelor of Science in Industrial Engineering </h5>
-          </div>
-          </div>
-
-          <div className="wrap tl_right">
-          <div className="tl_content">
-            <h4>2013-2017</h4>
-            <h3><b>JSW Law Group</b></h3>
-            <h4>Paralegal</h4>
-            <h5>Consulted clients starting from intake to settlement 
-              of their personal injuryt cases.   </h5>
-          </div>
-          </div>
-          </div>
-
-        <div className="experience_skills">
-            <div className="skill">
-              <div className='skill_title'>
-              <h3>Backend </h3>
-                <h3>Development</h3>
-              </div>
-                <ul className='skill_list'>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>OOP</li>
-                  <li>SQL</li>
-                  <li>Git</li>
-                </ul>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>
+          <h3 className='l_title'>Frontend Development</h3>
+          <div className="list frontend">
+            <div className="item">
+            <DiHtml5  className='icon html'/>
+            <h4>HTML</h4>
             </div>
-            <div className="skill">
-            <div className='skill_title'>
-              <h3>Frontend </h3>
-              <h3> Development</h3>
-              </div>
-                <ul className='skill_list'>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Java Script</li>
-                  <li>React</li>
-                  <li>React Native</li>
-                </ul>
+            <div className="item">
+            <DiCss3  className = 'icon css'/>
+            <h4>CSS</h4>
             </div>
-            <div className="skill">
-            <div className='skill_title'>
-              <h3>Design </h3> 
-                <h3>Tool</h3>
-              </div>
-                <ul className='skill_list'>
-                  <li>Figma</li>
-                  <li>Canva</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe Premiere</li>
-                  <li>Storyline 360</li>
-                </ul>
+            <div className="item">
+            <DiJavascript  className = 'icon js'/>
+            <h4>JavaScript</h4>
             </div>
-        </div>        
-        </div>
+            <div className="item">
+            <DiReact className = 'icon r'/>
+            <h4>React</h4>
+            </div>         
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h3 lassName='l_title' >Backend Development</h3>
+          <div className="list backend">
+            <div className="item">
+            <FaPython className = 'icon python'/>
+            <h4>Python</h4>
+            </div>
+            <div className="item">
+            <FaJava className = 'icon java'/>
+            <h4>Java</h4>
+            </div>
+            <div className="item">
+            <DiMysql className='icon sql'/>
+            <h4>SQL</h4>
+            </div>
+            <div className="item">
+            <DiGithubBadge className='icon git'/>
+            <h4>Git</h4>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide >
+        <h3 lassName='l_title'>Design Tool</h3>
+          <div className="list design">
+            <div className="item">
+            <FaFigma className = 'icon figma'/>
+            <h4>Figma</h4>
+            </div>
+            <div className="item">
+            <SiCanva className = 'icon canva'/>
+            <h4>Canva</h4>
+            </div>
+            <div className="item">
+            <SiAdobeillustrator  className='icon illustrator'/>
+            <h4>Illustrator</h4>
+            </div>
+            <div className="item">
+            <div className="icon sl">sl</div>
+            <h4>Storyline360</h4>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      </div>
+
 
     </section>
   )

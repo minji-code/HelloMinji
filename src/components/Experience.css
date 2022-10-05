@@ -1,200 +1,79 @@
-
+.experience_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .experience_btn{
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
 }
-.experience_container{
+
+.mySwiper{
+    height: 50vh;
+    width: 80vw;
+    color: black;
+    border-radius: 2rem;
+    box-shadow: rgba(74, 78, 105, 1) 0px 20px 30px 2px;
+    margin-bottom: 3rem;
+}
+
+.swiper-slide{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: var(--color-light);
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: var(--color-bg) !important;
 }
 
-.experience_skills{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 4rem;
-    margin-top: 4rem;
-    overflow: hidden;
-    align-self: center;
-}
 
-.skill{
-    background: var(--color-pink);
-    color: var(--color-dark);
-    padding-bottom:1.3rem;
-    text-align: center;
-    width: 10rem;
-    border-radius: 1.5rem;
-}
-
-.skill_title{
-    background: var(--color-ft);
-    color:var(--color-light);
-    width: 10rem;
-    Padding: 1rem;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-}
-
-.skill_list{
-    padding-top: 1.3rem;
-}
-
-.timeline{
-    position: relative;
+.list{
     width: 50vw;
-    margin-left: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
 
-/* verticle line */
-.timeline::after{
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 60%;
-    margin-left: -3px;
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.wrap{
-    padding: 10px 40px;
-    position:relative;
-    width: 60%;
-}
-
-/* circle */
-.wrap::after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    right: -8px;
-    background-color: white;
-    border: 4px solid rgba(128,128,128,.8);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.tl_left{
-    left:0;
-}
-
-.tl_right{
-    left: 60%;
-    width:35vw;
-}
-
-.tl_right::after{
-    left:-1.7%;
-}
-
-.tl_content{
+.icon{
+    background-color: var(--color-bg);
+    border-radius: 15px;
     padding: 1rem;
-    background-color: var(--color-ft);
-    position: relative;
-    border-radius: 6px;
+    color: var(--color-light);
+    font-size: max(7rem);
+    transition: var(--transition);
 }
 
-/* Add arrows to the left container (pointing right) */
-.tl_left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .tl_right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+.icon:hover{
+    background-color: var(--color-purple);
+    color: var(--color-dark);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.sl{
+    text-align: center;
+    font-size: 3rem;
+    height: 7rem;
+    width: 7rem;
+}
+
+
 
 @media screen and (max-width: 1024px) {
-    .timeline{
-        width: fit-content;
-        left: -5rem;
-    }
 
-    .timeline::after{
-        height: 65vh;
-    }
-
-    .tl_content{
-        width: 25vh;
-    }
-
-    .tl_left{
-        left:60%;
-    }
-
-    .tl_left::after{
-        left:-10px;
-    }
-
-    .tl_right::after{
-        left:-3.5%;
-    }
-
-    .tl_left::before{
-        left:30px;
-        transform: rotate(180deg);
-    }
 }
 
 @media screen and (max-width: 600px) {
-    .experience_container{
-        flex-direction: column;
-    }
 
-    .experience_skills{
-            grid-template-columns: 1fr;
-            width: 50vw;
-            margin-left: 4rem;
-            gap: 1rem;
-        }
-
-    .timeline{
-        width: fit-content;
-        left: -20rem;
-    }
-
-    .timeline::after{
-        height: 80vh;
-    }
-
-    .tl_content{
-        width: 30vh;
-    }
-    .tl_left{
-        left:60%;
-    }
-
-    .tl_left::after{
-        left:-5%;
-    }
-    .tl_left::before{
-        left:30px;
-        transform: rotate(180deg);
-    }
-
-    .tl_right::after{
-        left: -7%;
-    }
 }
