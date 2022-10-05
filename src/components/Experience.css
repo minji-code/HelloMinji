@@ -47,17 +47,17 @@
 }
 
 .icon{
-    background-color: var(--color-bg);
+    background-color: var(--color-purple);
     border-radius: 15px;
     padding: 1rem;
-    color: var(--color-light);
+    color: var(--color-dark);
     font-size: max(7rem);
     transition: var(--transition);
 }
 
 .icon:hover{
-    background-color: var(--color-purple);
-    color: var(--color-dark);
+    background-color: var(--color-bg);
+    color: var(--color-light);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -75,5 +75,26 @@
 }
 
 @media screen and (max-width: 600px) {
+    .mySwiper{
+        height: 80vh;
+    }
+    .list{
+        flex-direction: column;
+    }
+    .icon{
+        padding: .3rem;
+        font-size: 3rem;
+    }
+    .sl{
+        text-align: center;
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 3rem;
+        padding: 0;
+        padding-top: .3rem;
+    }
 
+    .swiper-slide{
+        gap: 1.5rem;
+    }
 }

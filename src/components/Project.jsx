@@ -29,7 +29,46 @@ const Project = () => {
             <div className="project_item_comingsoon">
                 Something Exciting
             </div>
-            <h4>project title</h4>
+            <h4>Coming Soon...</h4>
+            <div className='project_btn'>
+              <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
+          </article>
+
+          <article className='project_item'>
+          <div className="project_item_wrap">
+            <div className="project_item_comingsoon">
+                Something Exciting
+            </div>
+            <h4>Coming Soon...</h4>
+            <div className='project_btn'>
+              <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
+          </article>
+
+          <article className='project_item'>
+          <div className="project_item_wrap">
+            <div className="project_item_comingsoon">
+                Something Exciting
+            </div>
+            <h4>Coming Soon...</h4>
+            <div className='project_btn'>
+              <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
+          </article>
+
+          <article className='project_item'>
+          <div className="project_item_wrap">
+            <div className="project_item_comingsoon">
+                Something Exciting
+            </div>
+            <h4>Coming Soon...</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>

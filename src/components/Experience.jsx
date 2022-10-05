@@ -13,8 +13,8 @@ const Experience = () => {
 
   return (
     <section id='experience'>
-      <h5>Working Experience</h5>
-      <h2>What I Can Do</h2>
+      <h5>What I Can Do</h5>
+      <h2>Experience</h2>
       <div className="experience_btn">
       <a href ={cv} download className='btn'>Download Resume</a>
       </div>
