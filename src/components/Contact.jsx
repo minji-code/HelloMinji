@@ -39,11 +39,11 @@ const Contact = () => {
             <a href="tel:404-642-0400">Call Me</a>
           </article>
         </div>
-        <form ref ={form} onSumit = {sendEmail}>
+        <form ref ={form} onSubmit = {sendEmail}>
           <input type="text" name="name" placeholder = "Your Full Name" required />
           <input type="email" name = "email" placeholder = "Your Email" required />
           <textarea name = "message" rows ="7" placeholder = "Your Message" required/>
-          <button type = 'submit' class = 'btn btn-primary'>Send Message</button>
+          <button type = 'submit' className = 'btn btn-primary'>Send Message</button>
         </form>
       </div>
 

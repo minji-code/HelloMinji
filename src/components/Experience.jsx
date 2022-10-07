@@ -42,7 +42,7 @@ const Experience = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <h3 lassName='l_title' >Backend Development</h3>
+          <h3 className='l_title' >Backend Development</h3>
           <div className="list backend">
             <div className="item">
             <FaPython className = 'icon python'/>
@@ -63,7 +63,7 @@ const Experience = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide >
-        <h3 lassName='l_title'>Design Tool</h3>
+        <h3 className='l_title'>Design Tool</h3>
           <div className="list design">
             <div className="item">
             <FaFigma className = 'icon figma'/>
