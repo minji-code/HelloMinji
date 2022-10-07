@@ -19,8 +19,8 @@ const Home = () => {
           </div>
 
           <div className="socials">
-            <a href = "http://linkedin.com" target = "_blank" rel="noopener noreferrer"><BsLinkedin/></a>
-            <a href = "http://github.com" target = "_blank" rel="noopener noreferrer"><BsGithub/></a>
+            <a href = "https://www.linkedin.com/in/alswl92" target = "_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+            <a href = "http://github.com/alswl92" target = "_blank" rel="noopener noreferrer"><BsGithub/></a>
           </div>
 
           <div className="me">

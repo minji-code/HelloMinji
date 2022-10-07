@@ -2,7 +2,7 @@ import React from 'react'
 import cv from '../assets/resume.pdf'
 import{DiHtml5, DiCss3, DiJavascript, DiReact, DiMysql, DiGithubBadge} from 'react-icons/di'
 import {FaPython, FaJava, FaFigma} from 'react-icons/fa'
-import {SiCanva, SiAdobeillustrator} from 'react-icons/si'
+import {SiCanva, SiAdobeillustrator,} from 'react-icons/si'
 import './Experience.css'
 import {Navigation} from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
