@@ -48,6 +48,10 @@
     justify-content: center;
 }
 
+.project_description{
+    padding: .5rem;
+}
+
 .project_btn{
     display: flex;
     gap: .5rem;

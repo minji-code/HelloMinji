@@ -17,7 +17,7 @@ const Project = () => {
             <div className="project_item_image">
                 <img src = {IMG2}></img>
             </div>
-            <h4>Weather App</h4>
+            <h4 className='project_description'>Weather Search Application</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/Weather_App' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://alswl92.github.io/Weather_App/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
@@ -30,7 +30,7 @@ const Project = () => {
             <div className="project_item_image">
                 <img src = {IMG1} alt=''/>
             </div>
-            <h4>Calculator Web Application</h4>
+            <h4 className='project_description'>Calculator Web Application</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/MyCalculator' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://alswl92.github.io/MyCalculator/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
@@ -43,7 +43,7 @@ const Project = () => {
             <div className="project_item_comingsoon">
                 Something Exciting
             </div>
-            <h4>Coming Soon...</h4>
+            <h4 className='project_description'>Coming Soon...</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
@@ -56,7 +56,7 @@ const Project = () => {
             <div className="project_item_comingsoon">
                 Something Exciting
             </div>
-            <h4>Coming Soon...</h4>
+            <h4 className='project_description'>Coming Soon...</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
@@ -69,7 +69,7 @@ const Project = () => {
             <div className="project_item_comingsoon">
                 Something Exciting
             </div>
-            <h4>Coming Soon...</h4>
+            <h4 className='project_description'>Coming Soon...</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
@@ -82,7 +82,7 @@ const Project = () => {
             <div className="project_item_comingsoon">
                 Something Exciting
             </div>
-            <h4>Coming Soon...</h4>
+            <h4 className='project_description'>Coming Soon...</h4>
             <div className='project_btn'>
               <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
