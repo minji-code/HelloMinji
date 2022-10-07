@@ -8,12 +8,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_01w8dly', 'service_01w8dly', form.current, 'dYy9-PfHJ5uiBBuWJ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendForm('service_01w8dly', 
+    'template_4ylmr2m', 
+    form.current, 
+    'dYy9-PfHJ5uiBBuWJ')
+      .then(
+        result => console.log(result.text),
+        error => console.log(error.text)
+      );
   };
   return (
     <section id='contact'>
