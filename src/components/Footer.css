@@ -10,11 +10,10 @@ footer a{
     color: white;
 }
 
-.permalinks{
+.footer_txt{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
     margin-bottom: 6rem ;
 }
 
@@ -37,11 +36,4 @@ footer a{
     background-color: var(--color-light);
     color: var(--color-dark);
     border-color: var(--color-ft);
-}
-
-@media screen and (max-width: 600px) {
-    .permalinks{
-        flex-direction: column;
-        gap: 1.5rem;
-    }
 }

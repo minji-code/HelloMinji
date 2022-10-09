@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../assets/resume.pdf'
+import cv from '../assets/Minji Kim_CV.docx'
 import{DiHtml5, DiCss3, DiJavascript, DiReact, DiGithubBadge, DiNodejs} from 'react-icons/di'
 import {FaPython, FaJava, FaFigma} from 'react-icons/fa'
 import {SiCanva, SiAdobeillustrator,} from 'react-icons/si'
@@ -16,7 +16,7 @@ const Experience = () => {
       <h5>What I Can Do</h5>
       <h2>Experience</h2>
       <div className="experience_btn">
-      <a href ={cv} download className='btn'>Download Resume</a>
+      <a href ={cv} download className='btn'>Download CV</a>
       </div>
       <div className="container experience_container">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">

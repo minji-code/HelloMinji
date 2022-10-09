@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../assets/resume.pdf'
+import cv from '../assets/Minji Kim_CV.docx'
 import ME from '../assets/profilepic.png'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import './Home.css'
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="container home_container">
 
           <div className="btns">
-            <a href ={cv} download className='btn'>Download Resume</a>
+            <a href ={cv} download className='btn'>Download CV</a>
             <a href = "#contact" className='btn btn-primary'>Contact Me</a>
           </div>
 

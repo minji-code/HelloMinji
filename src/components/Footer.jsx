@@ -10,9 +10,10 @@ const Footer = () => {
         <a href = "http://github.com/alswl92" target = "_blank" rel="noopener noreferrer"><BsGithub/></a>
       </div>
 
-      <ul className='permalinks'>
-        <li>Minji Kim</li>
-      </ul>
+      <div className='footer_txt'>
+        <h3>Minji Kim</h3>
+        <h4>Fullstack Developer</h4>
+      </div>
     </footer>
   )
 }
