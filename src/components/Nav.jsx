@@ -8,10 +8,10 @@ const Nav = () => {
 
   return (
     <nav>
-      <Link to= 'home' spy={true} smooth={true} offset={50} duration={50} ><AiOutlineHome /></Link>
-      <Link to = 'project' spy={true} smooth={true} offset={5} duration={50}><AiOutlineFundProjectionScreen /></Link>
-      <Link to ='experience'spy={true} smooth={true} offset={5} duration={50}><BsFilePerson /></Link>
-      <Link to='contact'spy={true} smooth={true} offset={5} duration={50} ><AiOutlineMail /></Link>
+      <Link to= 'home' spy={true} smooth={true} offset={0} duration={50} ><AiOutlineHome /></Link>
+      <Link to = 'project' spy={true} smooth={true} offset={0} duration={50}><AiOutlineFundProjectionScreen /></Link>
+      <Link to = 'experience' spy={true} smooth={true} offset={0} duration={50}><BsFilePerson /></Link>
+      <Link to= 'contact' spy={true} smooth={true} offset={0} duration={50} ><AiOutlineMail /></Link>
     </nav>
   )
 }

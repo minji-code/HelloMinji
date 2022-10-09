@@ -1,6 +1,6 @@
 import React from 'react'
 import cv from '../assets/resume.pdf'
-import{DiHtml5, DiCss3, DiJavascript, DiReact, DiMysql, DiGithubBadge} from 'react-icons/di'
+import{DiHtml5, DiCss3, DiJavascript, DiReact, DiGithubBadge, DiNodejs} from 'react-icons/di'
 import {FaPython, FaJava, FaFigma} from 'react-icons/fa'
 import {SiCanva, SiAdobeillustrator,} from 'react-icons/si'
 import './Experience.css'
@@ -53,8 +53,8 @@ const Experience = () => {
             <h4>Java</h4>
             </div>
             <div className="item">
-            <DiMysql className='icon sql'/>
-            <h4>SQL</h4>
+            <DiNodejs className='icon nodejs'/>
+            <h4>Node.js</h4>
             </div>
             <div className="item">
             <DiGithubBadge className='icon git'/>
