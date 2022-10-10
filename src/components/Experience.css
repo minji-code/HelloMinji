@@ -9,93 +9,80 @@
     padding-bottom: 2rem;
 }
 
-.mySwiper{
+.experience_content{
     height: 50vh;
     width: 80vw;
     color: black;
     border-radius: 2rem;
     box-shadow: rgba(74, 78, 105, 1) 0px 20px 30px 2px;
     margin-bottom: 3rem;
+    background-color: var(--color-light);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem;
+    gap: 3rem;
 }
-
-.swiper-slide{
+.item{
+    border-radius: 14px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    background-color: var(--color-light);
-}
-.swiper-button-next,
-.swiper-button-prev{
-    color: var(--color-bg) !important;
-}
-
-
-.list{
-    width: 50vw;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-}
-
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    color: var(--color-light);
+    background-color: var(--color-ft);
+    cursor: pointer;
+    height: 8rem;
+    max-width: 170px;
+    font-size: 1rem;
 }
 
 .icon{
-    background-color: var(--color-purple);
     border-radius: 15px;
     padding: 1rem;
-    color: var(--color-dark);
     font-size: max(7rem);
+}
+
+.item:hover{
+    background-color: var(--color-bg);
+}
+
+.hide{
+    display: none;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.item:hover > .hide {
+    display: block;
+    background-color: var(--color-bg);
+    color: var(--color-light);
     transition: var(--transition);
 }
 
-.icon:hover{
-    background-color: var(--color-bg);
-    color: var(--color-light);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.sl{
-    text-align: center;
-    font-size: 3rem;
-    height: 7rem;
-    width: 7rem;
-}
-
-
-
 @media screen and (max-width: 1024px) {
-
+    .experience_content{
+        padding: 2rem;
+        height: auto;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    .mySwiper{
-        height: 80vh;
+
+    .experience_content{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+        height: auto;
     }
-    .list{
-        flex-direction: column;
+    .item{
+        width: 8rem;
+        font-size: 1rem;
     }
     .icon{
         padding: .3rem;
-        font-size: 3rem;
+        font-size: 4rem;
     }
-    .sl{
-        text-align: center;
-        font-size: 1.5rem;
-        height: 3rem;
-        width: 3rem;
-        padding: 0;
-        padding-top: .3rem;
-    }
-
-    .swiper-slide{
-        gap: 1.5rem;
+    .hide{
+        padding:0;
     }
 }
