@@ -26,12 +26,14 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    font-size: 1.5rem;
 }
 .scroll_down{
     grid-area: sidebar;
     transform: rotate(90deg);
     font-weight: 200;
     align-self: center;
+    font-size: 1rem;
 }
 
 
