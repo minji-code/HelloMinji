@@ -18,7 +18,7 @@
     margin-bottom: 3rem;
     background-color: var(--color-light);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     padding: 5rem;
     gap: 3rem;
 }

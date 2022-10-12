@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import cv from '../assets/Minji Kim_CV.docx'
 import{DiHtml5, DiCss3, DiJavascript, DiReact, DiGithubBadge, DiNodejs} from 'react-icons/di'
-import {FaPython, FaJava} from 'react-icons/fa'
+import {FaPython, FaJava, FaNodeJs} from 'react-icons/fa'
+import {SiPostman} from 'react-icons/si'
 import './Experience.css'
 
 const Experience = () => {
@@ -53,6 +54,16 @@ const Experience = () => {
         <div className="item">
             <DiReact  className='icon'/>
               <h4 className='hide'>React</h4>
+        </div>
+
+        <div className="item">
+            <FaNodeJs  className='icon'/>
+              <h4 className='hide'>Express.js</h4>
+        </div>
+
+        <div className="item">
+            <SiPostman  className='icon'/>
+              <h4 className='hide'>API</h4>
         </div>
 
       </div>
