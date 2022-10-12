@@ -3,6 +3,7 @@ import './Project.css'
 import IMG1 from '../assets/project1.png'
 import IMG2 from '../assets/project2.png'
 import IMG3 from '../assets/project3.png'
+import IMG4 from '../assets/project4.png'
 
 
 const Project = () => {
@@ -12,6 +13,19 @@ const Project = () => {
       <h2>Projects</h2>
 
       <div className="container project_container">
+
+      <article className='project_item'>
+          <div className="project_item_wrap">
+          <div className="project_item_image">
+                <img src = {IMG4}></img>
+            </div>
+            <h4 className='project_description'>Contact CRUD application</h4>
+            <div className='project_btn'>
+              <a href='https://github.com/alswl92/contactlist' className='btn' target= '_blank' rel="noopener noreferrer">FrontEnd</a>
+              <a href = 'https://github.com/alswl92/express' className='btn' target= '_blank' rel="noopener noreferrer">BackEnd</a>
+            </div>
+          </div>
+          </article>
 
       <article className='project_item'>
           <div className="project_item_wrap">
@@ -77,22 +91,6 @@ const Project = () => {
             </div>
           </div>
           </article>
-
-          <article className='project_item'>
-          <div className="project_item_wrap">
-            <div className="project_item_comingsoon">
-                Something Exciting
-            </div>
-            <h4 className='project_description'>Coming Soon...</h4>
-            <div className='project_btn'>
-              <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
-            </div>
-          </div>
-          </article>
-          
-        
-
       </div>
     </section>
   )
