@@ -5,6 +5,7 @@ import IMG2 from '../assets/project2.png'
 import IMG3 from '../assets/project3.png'
 import IMG4 from '../assets/project4.png'
 import IMG5 from '../assets/project5.png'
+import IMG6 from '../assets/project6.png'
 
 
 const Project = () => {
@@ -18,25 +19,24 @@ const Project = () => {
       <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
-            <img src = {IMG5}></img>
+            <img src = {IMG6}></img>
             </div>
-            <h4 className='project_description'>IceCream Ecommerce App</h4>
+            <h4 className='project_description'>ReactNative - MovieSearch</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/IceCreamScoop' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://alswl92.github.io/IceCreamScoop/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/alswl92/MovieDataBase_mobile' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
             </div>
           </div>
           </article>
 
       <article className='project_item'>
           <div className="project_item_wrap">
-          <div className="project_item_image">
-                <img src = {IMG4}></img>
+            <div className="project_item_image">
+            <img src = {IMG5}></img>
             </div>
-            <h4 className='project_description'>Contact CRUD application</h4>
+            <h4 className='project_description'>IceCream Ecommerce App</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/contactlist' className='btn' target= '_blank' rel="noopener noreferrer">FrontEnd</a>
-              <a href = 'https://github.com/alswl92/express' className='btn' target= '_blank' rel="noopener noreferrer">BackEnd</a>
+              <a href='https://github.com/alswl92/IceCreamScoop' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://alswl92.github.io/IceCreamScoop/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article>
@@ -67,6 +67,19 @@ const Project = () => {
           </div>
           </article>
 
+          <article className='project_item'>
+          <div className="project_item_wrap">
+          <div className="project_item_image">
+                <img src = {IMG4}></img>
+            </div>
+            <h4 className='project_description'>Contact CRUD application</h4>
+            <div className='project_btn'>
+              <a href='https://github.com/alswl92/contactlist' className='btn' target= '_blank' rel="noopener noreferrer">FrontEnd</a>
+              <a href = 'https://github.com/alswl92/express' className='btn' target= '_blank' rel="noopener noreferrer">BackEnd</a>
+            </div>
+          </div>
+          </article>
+
         <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
@@ -79,7 +92,7 @@ const Project = () => {
             </div>
           </div>
           </article>
-
+{/* 
           <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_comingsoon">
@@ -91,7 +104,7 @@ const Project = () => {
               <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
-          </article>
+          </article> */}
       </div>
     </section>
   )

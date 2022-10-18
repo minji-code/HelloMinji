@@ -52,6 +52,7 @@
     display: none;
     padding-bottom: 1rem;
     border-radius: 15px;
+    text-align: center;
 }
 
 .item:hover > .hide {

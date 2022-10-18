@@ -47,13 +47,13 @@ const Experience = () => {
         </div>
 
         <div className="item">
-            <DiGithubBadge  className='icon'/>
-              <h4 className='hide'>Git</h4>
+            <DiReact  className='icon'/>
+              <h4 className='hide'>React and React-Native</h4>
         </div>
 
         <div className="item">
-            <DiReact  className='icon'/>
-              <h4 className='hide'>React</h4>
+            <DiGithubBadge  className='icon'/>
+              <h4 className='hide'>Git</h4>
         </div>
 
         <div className="item">
@@ -63,7 +63,7 @@ const Experience = () => {
 
         <div className="item">
             <SiPostman  className='icon'/>
-              <h4 className='hide'>API</h4>
+              <h4 className='hide'>REST API</h4>
         </div>
 
       </div>
