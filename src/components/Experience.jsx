@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import cv from '../assets/Minji Kim Suh_CV.docx'
+import cv from '../assets/Minji Kim Suh_CV.docx' 
 import{DiHtml5, DiCss3, DiJavascript, DiReact, DiGithubBadge, DiNodejs} from 'react-icons/di'
 import {FaPython, FaJava, FaNodeJs} from 'react-icons/fa'
 import {SiPostman} from 'react-icons/si'

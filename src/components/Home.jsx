@@ -1,15 +1,15 @@
 import React from 'react'
-import cv from '../assets/Minji Kim_CV.docx'
+import cv from '../assets/Minji Kim Suh_CV.docx'
 import ME from '../assets/profilepic.png'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import './Home.css'
 
 const Home = () => {
-  return (
+  return ( 
     <section className = 'home'id='home'>
           <h5>Hello, I'm</h5>
-          <h1>Minji Kim</h1>
-          <h5>Fullstack Developer</h5> 
+          <h1>Minji Kim Suh</h1>
+          <h5>Software Engineer</h5> 
 
         <div className="container home_container">
 

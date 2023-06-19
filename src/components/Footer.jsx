@@ -11,8 +11,8 @@ const Footer = () => {
       </div>
 
       <div className='footer_txt'>
-        <h3>Minji Kim</h3>
-        <h4>Fullstack Developer</h4>
+        <h3>Minji Kim Suh</h3>
+        <h4>Software Engineer</h4>
       </div>
     </footer>
   )
