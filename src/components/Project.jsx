@@ -19,7 +19,7 @@ const Project = () => {
       <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
-            <img src = {IMG6}></img>
+            <img src = {IMG6} alt='moviesearch'></img>
             </div>
             <h4 className='project_description'>ReactNative - MovieSearch</h4>
             <div className='project_btn'>
@@ -31,7 +31,7 @@ const Project = () => {
       <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
-            <img src = {IMG5}></img>
+            <img src = {IMG5} alt='icecream_website'></img>
             </div>
             <h4 className='project_description'>IceCream Ecommerce App</h4>
             <div className='project_btn'>
@@ -44,7 +44,7 @@ const Project = () => {
       <article className='project_item'>
           <div className="project_item_wrap">
           <div className="project_item_image">
-                <img src = {IMG3}></img>
+                <img src = {IMG3} alt='memorygame'></img>
             </div>
             <h4 className='project_description'>Memory Game</h4>
             <div className='project_btn'>
@@ -57,7 +57,7 @@ const Project = () => {
       <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
-                <img src = {IMG2}></img>
+                <img src = {IMG2} alt='weatherapp'></img>
             </div>
             <h4 className='project_description'>Weather Search Application</h4>
             <div className='project_btn'>
@@ -70,7 +70,7 @@ const Project = () => {
           <article className='project_item'>
           <div className="project_item_wrap">
           <div className="project_item_image">
-                <img src = {IMG4}></img>
+                <img src = {IMG4} alt='CRUDapp'></img>
             </div>
             <h4 className='project_description'>Contact CRUD application</h4>
             <div className='project_btn'>
@@ -83,7 +83,7 @@ const Project = () => {
         <article className='project_item'>
           <div className="project_item_wrap">
             <div className="project_item_image">
-                <img src = {IMG1} alt=''/>
+                <img src = {IMG1} alt='calculatorapp'/>
             </div>
             <h4 className='project_description'>Calculator Web Application</h4>
             <div className='project_btn'>
