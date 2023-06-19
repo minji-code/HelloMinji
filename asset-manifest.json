@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HelloMinji/static/css/main.c61553fc.css",
-    "main.js": "/HelloMinji/static/js/main.02e15348.js",
+    "main.js": "/HelloMinji/static/js/main.74d5cc94.js",
     "static/media/project6.png": "/HelloMinji/static/media/project6.870f3904531ee29aae00.png",
     "static/media/profilepic.png": "/HelloMinji/static/media/profilepic.e0c4d6edaed343695dbd.png",
     "static/media/project4.png": "/HelloMinji/static/media/project4.b893bae1c3924897386d.png",
@@ -12,10 +12,10 @@
     "static/media/Minji Kim Suh_CV.docx": "/HelloMinji/static/media/Minji Kim Suh_CV.d26f3ffbcb08b4a3522f.docx",
     "index.html": "/HelloMinji/index.html",
     "main.c61553fc.css.map": "/HelloMinji/static/css/main.c61553fc.css.map",
-    "main.02e15348.js.map": "/HelloMinji/static/js/main.02e15348.js.map"
+    "main.74d5cc94.js.map": "/HelloMinji/static/js/main.74d5cc94.js.map"
   },
   "entrypoints": [
     "static/css/main.c61553fc.css",
-    "static/js/main.02e15348.js"
+    "static/js/main.74d5cc94.js"
   ]
 }
