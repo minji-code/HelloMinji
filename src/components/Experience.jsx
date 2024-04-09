@@ -1,7 +1,7 @@
 import React from 'react'
-import cv from '../assets/Minji Kim Suh_CV.docx' 
-import{DiHtml5, DiCss3, DiJavascript, DiReact, DiGithubBadge, DiNodejs, DiMysql} from 'react-icons/di'
-import {FaPython, FaJava, FaLaravel} from 'react-icons/fa'
+import cv from '../assets/Minji_K_Suh_Resume.pdf' 
+import{DiCss3, DiJavascript, DiReact, DiMysql,DiLinux, DiGitBranch } from 'react-icons/di'
+import {FaPython, FaLaravel,FaTerminal,FaAws} from 'react-icons/fa'
 import './Experience.css'
 
 const Experience = () => {
@@ -11,23 +11,14 @@ const Experience = () => {
       <h5>What I Can Do</h5>
       <h2>Experience</h2>
       <div className="experience_btn">
-      <a href ={cv} download className='btn'>Download CV</a>
+      <a href ={cv} download className='btn'>Download Resume</a>
       </div>
       <div className="container experience_container">
         <div className="experience_content">
-          <div className="item">
-              <DiHtml5  className='icon'/>
-              <h4 className='hide'>HTML</h4>
-          </div>
-
-          <div className="item">
-              <DiCss3  className='icon'/>
-                <h4 className='hide'>CSS</h4>
-          </div>
 
           <div className="item">
               <DiJavascript  className='icon'/>
-                <h4 className='hide'>JavaScript</h4>
+                <h4 className='hide'>JavaScript | jQuery</h4>
           </div>
 
           <div className="item">
@@ -41,13 +32,13 @@ const Experience = () => {
           </div>
 
           <div className="item">
-              <FaJava className='icon'/>
-                <h4 className='hide'>Java</h4>
+              <DiCss3  className='icon'/>
+                <h4 className='hide'>HTML | CSS</h4>
           </div>
 
           <div className="item">
-              <DiNodejs  className='icon'/>
-                <h4 className='hide'>Node.js</h4>
+              <FaTerminal  className='icon'/>
+                <h4 className='hide'>C++ | Java</h4>
           </div>
 
           <div className="item">
@@ -56,13 +47,23 @@ const Experience = () => {
           </div>
 
           <div className="item">
-              <DiGithubBadge  className='icon'/>
-                <h4 className='hide'>Git | Github</h4>
+              <DiLinux className='icon'/>
+                <h4 className='hide'>Linux</h4>
+          </div>
+
+          <div className="item">
+              <DiGitBranch  className='icon'/>
+                <h4 className='hide'>Git | Github | Version Control</h4>
           </div>
 
           <div className="item">
               <DiMysql  className='icon'/>
                 <h4 className='hide'>MySql</h4>
+          </div>
+
+          <div className="item">
+              <FaAws  className='icon'/>
+                <h4 className='hide'>AWS S3</h4>
           </div>
 
         </div>
