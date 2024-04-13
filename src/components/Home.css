@@ -39,7 +39,7 @@
 
 .me{
     grid-area: main;
-    background-color: var(--color-purple);
+    background-color: var(--color-accentA);
     transform: rotate(-10deg);
     width: 25vw;
     max-width: 350px;
@@ -53,7 +53,7 @@
 }
 
 .me_image{
-    background-color: var(--color-pink);
+    background-color: var(--color-accentB);
     width: 25vw;
     max-width: 350px;
     min-width: 300px;

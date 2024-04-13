@@ -29,6 +29,6 @@ nav a:hover {
 }
 
 nav a.active{
-    background: var(--color-purple);
+    background: var(--color-accentA);
     color: var(--color-dark);
 }

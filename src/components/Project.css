@@ -5,7 +5,7 @@
     margin-bottom: 3rem;
 }
 .project_item{
-    background:var(--color-pink);
+    background:var(--color-accentB);
     border-radius: 1rem;
     transition: var(--transition);
     position:relative;
@@ -28,7 +28,7 @@
 }
 
 .project_item_wrap:hover{
-    box-shadow: var(--color-pink) 0px 0px 5px 8px;
+    box-shadow: var(--color-accentB) 0px 0px 5px 8px;
 }
 
 .project_item_image{
@@ -41,7 +41,7 @@
 .project_item_comingsoon{
     display: flex;
     width: 100%;
-    background-color: var(--color-purple);
+    background-color: var(--color-accentA);
     height: max(10rem);
     border-radius: 1rem;
     align-items: center;

@@ -13,8 +13,8 @@
 :root{
     --color-bg: #22223B;
     --color-ft: #4A4E69;
-    --color-pink: #C9ADA7;
-    --color-purple: #9A8C98;
+    --color-accentB: #C9ADA7;
+    --color-accentA: #9A8C98;
     --color-light: #F2E9E4;
     --color-dark: #262626;
 
@@ -71,7 +71,7 @@ section > h5 {
 }
 
 a{
-    color: var(--color-pink);
+    color: var(--color-accentB);
     transition: var(--transition);
 }
 
@@ -83,11 +83,11 @@ a:hover {
     width: max-content;
     height: fit-content;
     display: block;
-    color: var(--color-pink);
+    color: var(--color-accentB);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-pink);
+    border: 1px solid var(--color-accentB);
     transition: var(--transition);
 }
 
@@ -98,9 +98,9 @@ a:hover {
 }
 
 .btn-primary{
-    background: var(--color-purple);
+    background: var(--color-accentA);
     color: var(--color-light);
-    border: var(--color-purple);
+    border: var(--color-accentA);
 }
 
 img{
