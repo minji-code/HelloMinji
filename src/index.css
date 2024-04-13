@@ -11,11 +11,11 @@
 }
 
 :root{
-    --color-bg: #22223B;
-    --color-ft: #4A4E69;
-    --color-accentB: #C9ADA7;
-    --color-accentA: #9A8C98;
-    --color-light: #F2E9E4;
+    --color-bg: #BEC7B4;
+    --color-ft: #FCF1D8;
+    --color-accentB: #F2CBBB; 
+    --color-accentA: #8DA290;
+    --color-light: #DEE2D9;
     --color-dark: #262626;
 
     --transition: all 400ms ease;
@@ -36,7 +36,7 @@ html{
 body{
     font-family: "Quicksand" , sans-serif;
     background-color: var(--color-bg);
-    color: white;
+    color: black;
     line-height: 1.6;
 }
 
@@ -60,47 +60,47 @@ section {
     overflow: scroll;
 }
 
-section > h2, section >h5, section >h1{
+section > h2, section >h4, section >h1{
     text-align: center;
 }
 section > h2 {
     margin-bottom: 3rem;
 }
-section > h5 {
-    color: var(--color-light)
+section > h4 {
+    color: var(--color-dark)
 }
 
 a{
-    color: var(--color-accentB);
+    color: var(--color-ft);
     transition: var(--transition);
 }
 
 a:hover {
-    color: white;
+    color: black;
 }
 
 .btn {
     width: max-content;
     height: fit-content;
     display: block;
-    color: var(--color-accentB);
+    color: var(--color-dark);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-accentB);
+    border: 1px solid var(--color-dark);
     transition: var(--transition);
 }
 
 .btn:hover{
-    background: white;
-    color: var(--color-bg);
+    background: var(--color-ft);
+    color: var(--color-dark);
     border-color: transparent;
 }
 
 .btn-primary{
-    background: var(--color-accentA);
-    color: var(--color-light);
-    border: var(--color-accentA);
+    background: var(--color-accentB);
+    color: var(--color-dark);
+    border: var(--color-accentB);
 }
 
 img{

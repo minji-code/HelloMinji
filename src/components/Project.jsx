@@ -11,7 +11,7 @@ import IMG6 from '../assets/project6.png'
 const Project = () => {
   return (
     <section id='project'>
-      <h5>My Recent Work</h5>
+      <h4>My Recent Work</h4>
       <h2>Projects</h2>
 
       <div className="container project_container">

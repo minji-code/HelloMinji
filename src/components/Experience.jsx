@@ -8,7 +8,7 @@ const Experience = () => {
 
   return (
     <section id='experience'>
-      <h5>What I Can Do</h5>
+      <h4>What I Can Do</h4>
       <h2>Experience</h2>
       <div className="experience_btn">
       <a href ={cv} download className='btn'>Download Resume</a>

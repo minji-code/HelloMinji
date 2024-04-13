@@ -5,7 +5,7 @@
     margin-bottom: 3rem;
 }
 .project_item{
-    background:var(--color-accentB);
+    background:var(--color-accentA);
     border-radius: 1rem;
     transition: var(--transition);
     position:relative;
@@ -28,7 +28,7 @@
 }
 
 .project_item_wrap:hover{
-    box-shadow: var(--color-accentB) 0px 0px 5px 8px;
+    box-shadow: var(--color-accentA) 0px 0px 5px 8px;
 }
 
 .project_item_image{

@@ -25,7 +25,7 @@ footer a{
 }
 
 .footer_socials a{
-    background-color: var(--color-bg);
+    background-color: var(--color-accentA);
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;

@@ -12,7 +12,7 @@
 }
 
 .contact_option {
-    background: var(--color-accentB);
+    background: var(--color-ft);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -23,13 +23,13 @@
 }
 
 .contact_option:hover{
-    background: transparent;
-    border-color: var(--color-accentB);
-    color: white;
+    background: var(--color-accentA);
+    border-color: var(--color-accentA);
+    color: black;
 }
 
 .contact_option:hover > a{
-    color: white;
+    color: black;
 }
 
 .contact_option > a{

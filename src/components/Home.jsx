@@ -7,9 +7,9 @@ import './Home.css'
 const Home = () => {
   return ( 
     <section className = 'home'id='home'>
-          <h5>Hello, I'm</h5>
+          <h4>Hello, I'm</h4>
           <h1>Minji Kim Suh</h1>
-          <h5>Software Engineer</h5> 
+          <h4>Software Engineer</h4> 
 
         <div className="container home_container">
 
