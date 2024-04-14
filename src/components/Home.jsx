@@ -7,9 +7,10 @@ import './Home.css'
 const Home = () => {
   return ( 
     <section className = 'home'id='home'>
-          <h4>Hello, I'm</h4>
+      <div className='page'>
+          <h3>Hello, I'm</h3>
           <h1>Minji Kim Suh</h1>
-          <h4>Software Engineer</h4> 
+          <h3>Software Engineer</h3> 
 
         <div className="container home_container">
 
@@ -31,7 +32,8 @@ const Home = () => {
 
           <h5 className='scroll_down'>Scroll Down</h5>
           
-          </div>
+        </div>
+      </div>
         
     </section>
   )

@@ -23,10 +23,12 @@
     --container-width-l: 75%;
     --container-width-m: 86%;
     --container-width-s: 80%;
+    --container-width-page: 85%;
 }
 
 html{
     scroll-behavior: smooth;
+    height: 100vh; 
 }
 
 ::-webkit-scrollbar{
@@ -39,10 +41,27 @@ body{
     color: black;
     line-height: 1.6;
 }
+.page{
+    width: var(--container-width-page);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --s: 50px;
+    --t: 5px; 
+    padding: 2em;
+    outline: var(--t) solid var(--color-ft); 
+    outline-offset: calc(-1*var(--t));
+    mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+}
 
 .container{
     width: var(--container-width-l);
     margin: 0 auto;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,13 +79,15 @@ section {
     overflow: scroll;
 }
 
-section > h2, section >h4, section >h1{
+section > h2, section >h3, section >h1{
     text-align: center;
 }
-section > h2 {
+
+div > h2 {
     margin-bottom: 3rem;
 }
-section > h4 {
+
+section > h3 {
     color: var(--color-dark)
 }
 

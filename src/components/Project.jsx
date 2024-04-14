@@ -11,7 +11,8 @@ import IMG6 from '../assets/project6.png'
 const Project = () => {
   return (
     <section id='project'>
-      <h4>My Recent Work</h4>
+      <div className='page'>
+      <h3>My Recent Work</h3>
       <h2>Projects</h2>
 
       <div className="container project_container">
@@ -105,6 +106,7 @@ const Project = () => {
             </div>
           </div>
           </article> */}
+      </div>
       </div>
     </section>
   )

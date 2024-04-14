@@ -19,7 +19,8 @@ const Contact = () => {
   };
   return (
     <section id='contact'>
-      <h4>Get In Touch</h4>
+      <div className='page'>
+      <h3>Get In Touch</h3>
       <h2>Contact Me</h2>
 
       <div className="container contact_container">
@@ -46,7 +47,7 @@ const Contact = () => {
           <button type = 'submit' className = 'btn btn-primary'>Send Message</button>
         </form>
       </div>
-
+      </div>
     </section>
   )
 }
