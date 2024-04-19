@@ -24,7 +24,7 @@ const Project = () => {
             </div>
             <h4 className='project_description'>ReactNative - MovieSearch</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/MovieDataBase_mobile' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href='https://github.com/minji-code/MovieDataBase_mobile' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
             </div>
           </div>
           </article>
@@ -36,8 +36,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>IceCream Ecommerce App</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/IceCreamScoop' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://alswl92.github.io/IceCreamScoop/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/minji-code/IceCreamScoop' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://minji-code.github.io/IceCreamScoop/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article>
@@ -49,8 +49,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>Memory Game</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/Memory_Game' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://alswl92.github.io/Memory_Game/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/minji-code/Memory_Game' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://minji-code.github.io/Memory_Game/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article>
@@ -62,8 +62,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>Weather Search Application</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/Weather_App' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://alswl92.github.io/Weather_App/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/minji-code/Weather_App' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://minji-code.github.io/Weather_App/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article>
@@ -75,8 +75,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>Contact CRUD application</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/contactlist' className='btn' target= '_blank' rel="noopener noreferrer">FrontEnd</a>
-              <a href = 'https://github.com/alswl92/express' className='btn' target= '_blank' rel="noopener noreferrer">BackEnd</a>
+              <a href='https://github.com/minji-code/contactlist' className='btn' target= '_blank' rel="noopener noreferrer">FrontEnd</a>
+              <a href = 'https://github.com/minji-code/express' className='btn' target= '_blank' rel="noopener noreferrer">BackEnd</a>
             </div>
           </div>
           </article>
@@ -88,8 +88,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>Calculator Web Application</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/MyCalculator' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://alswl92.github.io/MyCalculator/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/minji-code/MyCalculator' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://minji-code.github.io/MyCalculator/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article>
@@ -101,8 +101,8 @@ const Project = () => {
             </div>
             <h4 className='project_description'>Coming Soon...</h4>
             <div className='project_btn'>
-              <a href='https://github.com/alswl92/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
-              <a href = 'https://github.com/alswl92/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
+              <a href='https://github.com/minji-code/' className='btn' target= '_blank' rel="noopener noreferrer">Github</a>
+              <a href = 'https://github.com/minji-code/' className='btn btn-primary' target= '_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </div>
           </article> */}
