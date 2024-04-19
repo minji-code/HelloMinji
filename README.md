@@ -1,2 +1,2 @@
 # Visit My Homepage
-http://alswl92.github.io/HelloMinji
+http://minji-code.github.io/HelloMinji
