@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer_socials">
-        <a href = "https://www.linkedin.com/in/alswl92/" target = "_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+        <a href = "https://www.linkedin.com/in/minji-k-suh" target = "_blank" rel="noopener noreferrer"><BsLinkedin/></a>
         <a href = "http://github.com/minji-code" target = "_blank" rel="noopener noreferrer"><BsGithub/></a>
       </div>
 
