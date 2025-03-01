@@ -1,51 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* Custom styles */
+@layer base {
+  * {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     border: 0;
     outline: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-}
+  }
 
-:root{
+  :root{
     --color-bg: #BEC7B4;
     --color-ft: #FCF1D8;
     --color-accentB: #F2CBBB; 
     --color-accentA: #8DA290;
     --color-light: #DEE2D9;
     --color-dark: #262626;
-
     --transition: all 400ms ease;
-
     --container-width-l: 75%;
     --container-width-m: 86%;
     --container-width-s: 80%;
     --container-width-page: 85%;
-}
+  }
 
-html{
+  html{
     scroll-behavior: smooth;
     height: 100vh; 
-}
+  }
 
-::-webkit-scrollbar{
+  ::-webkit-scrollbar{
     display:none;
-}
+  }
 
-body{
+  body{
     font-family: "Quicksand" , sans-serif;
     background-color: var(--color-bg);
     color: black;
     line-height: 1.6;
+  }
 }
 
-.page{
+@layer components {
+  .page{
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -63,39 +67,39 @@ body{
       conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
       0 0/calc(100% - var(--s)) calc(100% - var(--s)),
       linear-gradient(#000 0 0) content-box;
-}
+  }
 
-.header{
+  .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-
-h1, h2, h3, h4, h5 {
+  h1, h2, h3, h4, h5 {
     font-weight: 500;
-}
+  }
 
-h1{
+  h1{
     font-size: 2.5em;
-}
-h2{
+  }
+  h2{
     font-size: 1.5em;
-}
+  }
 
-div > h2 {
+  div > h2 {
     margin-bottom: 3rem;
-}
-a{
+  }
+
+  a{
     color: var(--color-ft);
     transition: var(--transition);
-}
+  }
 
-a:hover {
+  a:hover {
     color: black;
-}
+  }
 
-.btn {
+  .btn {
     width: max-content;
     height: fit-content;
     color: var(--color-dark);
@@ -104,22 +108,22 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-dark);
     transition: var(--transition);
-}
+  }
 
-.btn:hover{
+  .btn:hover{
     background: var(--color-ft);
     color: var(--color-dark);
     border-color: transparent;
-}
+  }
 
-.btn-primary{
+  .btn-primary{
     background: var(--color-accentB);
     color: var(--color-dark);
     border: var(--color-accentB);
-}
+  }
 
-/* home */
-.me{
+  /* home */
+  .me{
     background-color: var(--color-accentA);
     transform: rotate(-10deg);
     width: 350px;
@@ -130,9 +134,9 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 2em;
     transition: var(--transition);
-}
+  }
 
-.me_image{
+  .me_image{
     background-color: var(--color-light);
     width: 350px;
     height: 370px;
@@ -141,46 +145,46 @@ a:hover {
     padding: 1.5rem 1rem 0rem 1rem;
     transform: rotate(10deg);
     transition: var(--transition);
-}
+  }
 
-.me:hover{
+  .me:hover{
     transform: rotate(0deg);
-}
+  }
 
-.me_image:hover{
+  .me_image:hover{
     transform: rotate(0deg);
     box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 17px 5px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
 }
 
 /* contact */
-
 .contact_option {
-    display: flex;
-    flex-direction: column;
-    gap:.3em;
-    align-items: center;
-    background: var(--color-ft);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    color: var(--color-dark);
-    cursor: pointer;
-    width: 18em;
+  display: flex;
+  flex-direction: column;
+  gap:.3em;
+  align-items: center;
+  background: var(--color-ft);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  color: var(--color-dark);
+  cursor: pointer;
+  width: 18em;
 }
 
 .contact_option:hover{
-    background: var(--color-accentA);
-    border-color: var(--color-accentA);
-    color: black;
+  background: var(--color-accentA);
+  border-color: var(--color-accentA);
+  color: black;
 }
 
 input,textarea{
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-accentA);
-    resize: none;
-    color: white;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-accentA);
+  resize: none;
+  color: white;
 }
