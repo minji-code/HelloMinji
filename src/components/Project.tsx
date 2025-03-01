@@ -54,7 +54,7 @@ const Project: React.FC = () => {
   ]
   return (
     <div className='page justify-center' id='project'>
-      <div className='flex flex-col items-center'>
+      <div className='header'>
         <h3>My Recent Work</h3>
         <h2>Projects</h2>
       </div>

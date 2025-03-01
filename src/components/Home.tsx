@@ -6,7 +6,7 @@ import {BsLinkedin, BsGithub} from 'react-icons/bs'
 const Home: React.FC = () => {
   return ( 
     <div className='page justify-center' id='home'>
-      <div className="flex flex-col items-center">
+      <div className="header">
         <div>Hello, I'm</div>
         <h1>Minji Kim Suh</h1>
         <h3>Software Engineer</h3> 

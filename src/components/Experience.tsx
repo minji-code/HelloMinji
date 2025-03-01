@@ -2,72 +2,88 @@ import React from 'react'
 import cv from '../assets/Minji_K_Suh_Resume.pdf' 
 import{DiCss3, DiJavascript, DiReact, DiMysql,DiLinux, DiGitBranch } from 'react-icons/di'
 import {FaPython, FaLaravel,FaTerminal,FaAws} from 'react-icons/fa'
-import './Experience.css'
 
 const Experience: React.FC = () => {
+
+  const expList = [
+    {
+      icon: DiJavascript,
+      title: 'JavaScript | jQuery'
+    },
+    {
+      icon: FaLaravel,
+      title: 'Laravel | PHP'
+    },
+    {
+      icon: FaPython,
+      title: 'Python'
+    },
+    {
+      icon: DiCss3,
+      title: 'HTML | CSS'
+    },
+    {
+      icon: FaTerminal,
+      title: 'C++ | Java'
+    },
+    {
+      icon: DiReact,
+      title: 'React and React-Native'
+    },
+    {
+      icon: DiLinux,
+      title: 'Linux'
+    },
+    {
+      icon: DiGitBranch,
+      title: 'Git | Github | Version Control'
+    },
+    {
+      icon: DiMysql,
+      title: 'MySql'
+    },
+    {
+      icon: FaAws,
+      title: 'AWS S3'
+    }
+  ]
+
   return (
-    <section id='experience'>
-      <div className='page'>
+    <div className='page justify-center items-center' id='experience'>
+      <div className='header'>
         <h3>What I Can Do</h3>
         <h2>Experience</h2>
-        <div className="experience_btn">
-          <a href={cv} download className='btn'>Download Resume</a>
-        </div>
-        <div className="container experience_container">
-          <div className="experience_content">
-            <div className="item">
-              <DiJavascript className='icon'/>
-              <h4 className='hide'>JavaScript | jQuery</h4>
-            </div>
-
-            <div className="item">
-              <FaLaravel className='icon'/>
-              <h4 className='hide'>Laravel | PHP</h4>
-            </div>
-
-            <div className="item">
-              <FaPython className='icon'/>
-              <h4 className='hide'>Python</h4>
-            </div>
-
-            <div className="item">
-              <DiCss3 className='icon'/>
-              <h4 className='hide'>HTML | CSS</h4>
-            </div>
-
-            <div className="item">
-              <FaTerminal className='icon'/>
-              <h4 className='hide'>C++ | Java</h4>
-            </div>
-
-            <div className="item">
-              <DiReact className='icon'/>
-              <h4 className='hide'>React and React-Native</h4>
-            </div>
-
-            <div className="item">
-              <DiLinux className='icon'/>
-              <h4 className='hide'>Linux</h4>
-            </div>
-
-            <div className="item">
-              <DiGitBranch className='icon'/>
-              <h4 className='hide'>Git | Github | Version Control</h4>
-            </div>
-
-            <div className="item">
-              <DiMysql className='icon'/>
-              <h4 className='hide'>MySql</h4>
-            </div>
-
-            <div className="item">
-              <FaAws className='icon'/>
-              <h4 className='hide'>AWS S3</h4>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+
+      <div className="flex justify-center pb-8">
+        <a href={cv} download className='btn'>Download Resume</a>
+      </div>
+
+      <div className='flex flex-col'>
+        <div>
+          FrontEnd
+        </div>
+        <div>
+          BackEnd
+        </div>
+        <div>
+          Other
+        </div>
+
+      </div>
+
+      {/* <div className="flex flex-wrap h-[50vh] w-[80vw] rounded-2xl mb-12 bg-[var(--color-light)] p-20 gap-20 overflow-hidden">
+        {expList.map((exp, index) => {
+          const Icon = exp.icon;
+          return (
+            <div key={index} className="expItem">
+              <Icon className='rounded-2xl p-4 text-[max(7rem)]'/>
+              <h4 className=''>{exp.title}</h4>
+            </div>
+          );
+        })}
+      </div> */}
+    </div>
   )
 }
 
