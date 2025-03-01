@@ -1,16 +1,15 @@
 import React from 'react'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import './Footer.css'
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <div className="footer_socials">
-        <a href="https://www.linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
-        <a href="http://github.com/minji-code" target="_blank" rel="noopener noreferrer"><BsGithub/></a>
+    <footer className='bg-[var(--color-ft)] py-12 mt-32'>
+      <div className="flex justify-center gap-8 m-8">
+        <a className='footer_socials' href="https://www.linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+        <a className='footer_socials' href="http://github.com/minji-code" target="_blank" rel="noopener noreferrer"><BsGithub/></a>
       </div>
 
-      <div className='footer_txt'>
+      <div className='header mb-16'>
         <h3>Minji Kim Suh</h3>
         <h4>Software Engineer</h4>
       </div>

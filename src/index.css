@@ -188,3 +188,11 @@ input,textarea{
   resize: none;
   color: white;
 }
+
+.footer_socials{
+    background-color: var(--color-accentA);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
