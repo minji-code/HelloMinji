@@ -3,6 +3,7 @@
   "name": "minji-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "emailjs-com": "^3.2.0",
