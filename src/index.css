@@ -44,15 +44,19 @@ body{
     color: black;
     line-height: 1.6;
 }
+
 .page{
-    width: var(--container-width-page);
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 90vh;
+    width: 85%;
+    margin: 0 auto;
+    overflow: scroll;
+    margin-top: 1rem;
+    padding-top:3rem;
     --s: 50px;
     --t: 5px; 
-    padding: 2em;
+    padding: 4em;
     outline: var(--t) solid var(--color-ft); 
     outline-offset: calc(-1*var(--t));
     mask:
@@ -61,25 +65,12 @@ body{
       linear-gradient(#000 0 0) content-box;
 }
 
-.container{
-    width: var(--container-width-l);
-    margin: 0 auto;
-
-}
-
 h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
 
 h1{
     font-size: 2.5rem;
-}
-
-section {
-    margin-top: 1rem;
-    padding-top:3rem;
-    height: max-content;
-    overflow: scroll;
 }
 
 section > h2, section >h3, section >h1{
@@ -126,6 +117,49 @@ a:hover {
     color: var(--color-dark);
     border: var(--color-accentB);
 }
+
+.me{
+    grid-area: main;
+    background-color: var(--color-accentA);
+    transform: rotate(-10deg);
+    width: 350px;
+    height: 370px;
+    min-height: 350px;
+    border-radius: 15px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2em;
+    transition: var(--transition);
+}
+
+.me_image{
+    background-color: var(--color-light);
+    width: 350px;
+    height: 370px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1.5rem 1rem 0rem 1rem;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.me:hover{
+    transform: rotate(0deg);
+}
+
+.me_image:hover{
+    transform: rotate(0deg);
+    box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 17px 5px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.scroll_down{
+    grid-area: sidebar;
+    transform: rotate(90deg);
+    font-weight: 200;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
 
 img{
     display: block;
