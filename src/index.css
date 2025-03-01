@@ -65,26 +65,21 @@ body{
       linear-gradient(#000 0 0) content-box;
 }
 
+
 h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
-
-section > h2, section >h3, section >h1{
-    text-align: center;
+h2{
+    font-size: 1.5em;
 }
 
 div > h2 {
     margin-bottom: 3rem;
 }
-
-section > h3 {
-    color: var(--color-dark)
-}
-
 a{
     color: var(--color-ft);
     transition: var(--transition);
@@ -97,7 +92,6 @@ a:hover {
 .btn {
     width: max-content;
     height: fit-content;
-    display: block;
     color: var(--color-dark);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
@@ -118,8 +112,8 @@ a:hover {
     border: var(--color-accentB);
 }
 
+/* home */
 .me{
-    grid-area: main;
     background-color: var(--color-accentA);
     transform: rotate(-10deg);
     width: 350px;
@@ -152,20 +146,7 @@ a:hover {
     box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 17px 5px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-.scroll_down{
-    grid-area: sidebar;
-    transform: rotate(90deg);
-    font-weight: 200;
-    align-self: center;
-    font-size: 1.2rem;
-}
 
-
-img{
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
 
 @media screen and (max-width: 1024px) {
     .container{

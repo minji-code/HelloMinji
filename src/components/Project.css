@@ -1,9 +1,9 @@
-.project_container{
+/* .project_container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
     margin-bottom: 3rem;
-}
+} */
 .project_item{
     background:var(--color-accentA);
     border-radius: 1rem;

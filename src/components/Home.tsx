@@ -6,7 +6,7 @@ import {BsLinkedin, BsGithub} from 'react-icons/bs'
 const Home: React.FC = () => {
   return ( 
     <div className='page justify-center' id='home'>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center">
         <div>Hello, I'm</div>
         <h1>Minji Kim Suh</h1>
         <h3>Software Engineer</h3> 
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <h5 className='scroll_down'>Scroll Down</h5>
+        <h5 className='rotate-90 font-thin self-center text-[1.2rem]'>Scroll Down</h5>
       </div>
     </div>
   )
