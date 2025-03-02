@@ -151,6 +151,24 @@
     transform: rotate(0deg);
     box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 17px 5px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   }
+  /* projects */
+  .projectDiv{
+    background-color: var(--color-accentA);
+    border-radius: 0.5rem;
+    position: relative;
+    width: 20rem;
+  }
+  .projectItem{
+    background-color: var(--color-light);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    color: var(--color-dark);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    height: 18rem;
+  }
+
   /* contact */
   .contact_option {
     display: flex;

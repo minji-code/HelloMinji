@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import IMG1 from '../assets/project1.png'
 import IMG2 from '../assets/project2.png'
 import IMG3 from '../assets/project3.png'
@@ -6,9 +6,26 @@ import IMG4 from '../assets/project4.png'
 import IMG5 from '../assets/project5.png'
 import IMG6 from '../assets/project6.png'
 
-const Project: React.FC = () => {
+interface ProjectItem {
+  image: string;
+  alt: string;
+  title: string;
+  link: string;
+  demo?: string;
+  backendLink?: string;
+}
 
-  const projectList = [
+interface PlaceholderItem {
+  isPlaceholder: true;
+  id: string;
+}
+
+type DisplayItem = ProjectItem | PlaceholderItem;
+
+const Project: React.FC = () => {
+  const [itemsPerRow, setItemsPerRow] = useState(3);
+
+  const projectList: ProjectItem[] = [
     {
       image: IMG6,
       alt: 'moviesearch',
@@ -52,6 +69,35 @@ const Project: React.FC = () => {
       demo: "https://minji-code.github.io/MyCalculator/"
     }
   ]
+
+  // placeholders
+  const totalItems = projectList.length;
+  const rowCount = Math.ceil(totalItems / itemsPerRow);
+  const targetItems = rowCount * itemsPerRow;
+  const placeholdersNeeded = targetItems - totalItems;
+
+  const displayItems: DisplayItem[] = [
+    ...projectList,
+    ...Array(placeholdersNeeded).fill(null).map((_, index) => ({
+      isPlaceholder: true as const,
+      id: `placeholder-${index}`
+    }))
+  ];
+
+  useEffect(() => {
+    const updateItemsPerRow = () => {
+      const containerWidth = document.querySelector('.flex.flex-wrap')?.clientWidth || 0;
+      const itemWidth = 315; 
+      const gap = 64; 
+      const calculatedItemsPerRow = Math.floor((containerWidth + gap) / (itemWidth + gap));
+      setItemsPerRow(Math.max(1, calculatedItemsPerRow));
+    };
+
+    updateItemsPerRow();
+    window.addEventListener('resize', updateItemsPerRow);
+    return () => window.removeEventListener('resize', updateItemsPerRow);
+  }, []);
+
   return (
     <div className='page justify-center' id='project'>
       <div className='header'>
@@ -60,30 +106,38 @@ const Project: React.FC = () => {
       </div>
 
       <div className='flex flex-wrap gap-16 justify-center overflow-scroll p-4'>
-        {projectList.map((project, index) => (
-          <article key={index} className='bg-[var(--color-accentA)] rounded-lg relative max-w-[315px] min-w-[270px]'>
-            <div className="bg-[var(--color-light)] p-[1.3rem] rounded-lg text-[var(--color-dark)] relative left-[1rem] bottom-[1rem]">
-              <div className="w-full h-[max(10rem)] rounded-lg overflow-hidden">
-                <img src={project.image} alt={project.alt} />
-              </div>
-              <h4 className='p-2'>{project.title}</h4>
-              <div className='flex gap-2'>
-                {project.backendLink ? (
-                  <>
-                    <a href={project.link} className='btn' target='_blank' rel="noopener noreferrer">FrontEnd</a>
-                    <a href={project.backendLink} className='btn' target='_blank' rel="noopener noreferrer">BackEnd</a>
-                  </>
-                ) : (
-                  <>
-                    <a href={project.link} className='btn' target='_blank' rel="noopener noreferrer">Github</a>
-                    {project.demo && (
-                      <a href={project.demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
-                    )}
-                  </>
-                )}
+        {displayItems.map((item) => (
+          'isPlaceholder' in item ? (
+            <div key={item.id} className='projectDiv'>
+              <div className="projectItem flex items-center justify-center">
+                <h4 className='text-[var(--color-primary)] text-xl'>Coming Soon...</h4>
               </div>
             </div>
-          </article>
+          ) : (
+            <div key={item.title} className='projectDiv'>
+              <div className="projectItem">
+                <div className="w-full h-40 rounded-lg overflow-hidden">
+                  <img src={item.image} alt={item.alt} />
+                </div>
+                <h4 className='p-2'>{item.title}</h4>
+                <div className='flex gap-2'>
+                  {item.backendLink ? (
+                    <>
+                      <a href={item.link} className='btn' target='_blank' rel="noopener noreferrer">FrontEnd</a>
+                      <a href={item.backendLink} className='btn' target='_blank' rel="noopener noreferrer">BackEnd</a>
+                    </>
+                  ) : (
+                    <>
+                      <a href={item.link} className='btn' target='_blank' rel="noopener noreferrer">Github</a>
+                      {item.demo && (
+                        <a href={item.demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+                      )}
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          )
         ))}
       </div>
     </div>
