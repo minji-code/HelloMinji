@@ -56,7 +56,7 @@
     --s: 50px;
     --t: 5px; 
     padding: 4em;
-    outline: var(--t) solid var(--color-dark); 
+    outline: var(--t) solid var(--color-accentA); 
     outline-offset: calc(-1*var(--t));
     mask:
       conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
