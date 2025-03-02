@@ -1,88 +1,124 @@
 import React from 'react'
 import cv from '../assets/Minji_K_Suh_Resume.pdf' 
-import{DiCss3, DiJavascript, DiReact, DiMysql,DiLinux, DiGitBranch } from 'react-icons/di'
-import {FaPython, FaLaravel,FaTerminal,FaAws} from 'react-icons/fa'
+import {FaAws} from 'react-icons/fa'
+import { TbApi } from "react-icons/tb";
+import { SiNextdotjs, SiTailwindcss, SiReact, SiTypescript, SiJavascript,SiPython, SiLaravel,SiPhp,SiNodedotjs,SiCplusplus,SiMysql,SiPostgresql,SiGit,SiLinux} from "react-icons/si";
+
 
 const Experience: React.FC = () => {
 
-  const expList = [
+  const skillList= [
     {
-      icon: DiJavascript,
+      category:'Frontend ',
+      icon: SiReact,
+      title: 'React'
+    },
+    {
+      category:'Frontend ',
+      icon: SiNextdotjs,
+      title: 'Next.js'
+    },
+    {
+      category:'Frontend ',
+      icon: SiTailwindcss,
+      title: 'Tailwind CSS'
+    },
+    {
+      category:'Frontend ',
+      icon: SiTypescript, 
+      title: 'Typescript'
+    },
+    {
+      category:'Frontend ',
+      icon: SiJavascript ,
       title: 'JavaScript | jQuery'
     },
     {
-      icon: FaLaravel,
-      title: 'Laravel | PHP'
-    },
-    {
-      icon: FaPython,
+      category:'Backend ',
+      icon: SiPython,
       title: 'Python'
     },
     {
-      icon: DiCss3,
-      title: 'HTML | CSS'
+      category:'Backend ',
+      icon: SiLaravel,
+      title: 'Laravel'
     },
     {
-      icon: FaTerminal,
-      title: 'C++ | Java'
+      category:'Backend ',
+      icon: SiPhp,
+      title: 'PHP'
     },
     {
-      icon: DiReact,
-      title: 'React and React-Native'
+      category:'Backend ',
+      icon: SiNodedotjs,
+      title:'Node.js'
     },
     {
-      icon: DiLinux,
-      title: 'Linux'
+      category:'Backend ',
+      icon: TbApi,
+      title:'API'
     },
     {
-      icon: DiGitBranch,
-      title: 'Git | Github | Version Control'
+      category:'Backend ',
+      icon: SiCplusplus,
+      title:'C++'
     },
     {
-      icon: DiMysql,
+      category:'Database',
+      icon: SiMysql,
       title: 'MySql'
     },
     {
+      category:'Database',
+      icon:SiPostgresql,
+      title:'PostgreSql'
+    },
+    {
+      category:'Tool & Others',
+      icon: SiGit ,
+      title: 'Git'
+    },
+    {
+      category:'Tool & Others',
+      icon:SiLinux ,
+      title: 'Linux'
+    },
+    {
+      category:'Tool & Others',
       icon: FaAws,
-      title: 'AWS S3'
-    }
+      title: 'AWS'
+    },
   ]
 
   return (
-    <div className='page justify-center items-center' id='experience'>
+    <div className='page justify-center items-center gap-10' id='experience'>
       <div className='header'>
         <h3>What I Can Do</h3>
         <h2>Experience</h2>
       </div>
 
-      <div className="flex justify-center pb-8">
+      <div className="flex justify-center pb-16">
         <a href={cv} download className='btn'>Download Resume</a>
       </div>
 
-      <div className='flex flex-col'>
-        <div>
-          FrontEnd
-        </div>
-        <div>
-          BackEnd
-        </div>
-        <div>
-          Other
-        </div>
-
-      </div>
-
-      {/* <div className="flex flex-wrap h-[50vh] w-[80vw] rounded-2xl mb-12 bg-[var(--color-light)] p-20 gap-20 overflow-hidden">
-        {expList.map((exp, index) => {
-          const Icon = exp.icon;
-          return (
-            <div key={index} className="expItem">
-              <Icon className='rounded-2xl p-4 text-[max(7rem)]'/>
-              <h4 className=''>{exp.title}</h4>
+      <div className='flex flex-wrap gap-8 justify-center'>
+        {Array.from(new Set(skillList.map(skill => skill.category))).map((category) => (
+          <div key={category} className='bg-[var(--color-light)] p-6 rounded-lg w-80 shadow-xl'>
+            <h3 className='font-semibold mb-4'>{category}</h3>
+            <hr className='border-t-2 border-black mb-4' />
+            <div className='flex flex-col gap-4'>
+              {skillList
+                .filter(skill => skill.category === category)
+                .map((skill, index) => (
+                  <div key={index} className='flex items-center gap-3 p-3'>
+                    {skill.icon && <skill.icon className='text-2xl' />}
+                    <span>{skill.title}</span>
+                  </div>
+                ))}
             </div>
-          );
-        })}
-      </div> */}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
