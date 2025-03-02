@@ -59,7 +59,7 @@ const Project: React.FC = () => {
         <h2>Projects</h2>
       </div>
 
-      <div className='flex flex-wrap gap-16 justify-center'>
+      <div className='flex flex-wrap gap-16 justify-center overflow-scroll p-4'>
         {projectList.map((project, index) => (
           <article key={index} className='bg-[var(--color-accentA)] rounded-lg relative max-w-[315px] min-w-[270px]'>
             <div className="bg-[var(--color-light)] p-[1.3rem] rounded-lg text-[var(--color-dark)] relative left-[1rem] bottom-[1rem]">
