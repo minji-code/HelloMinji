@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Tailwind directives */
 @tailwind base;
@@ -18,17 +19,12 @@
   }
 
   :root{
-    --color-bg: #BEC7B4;
-    --color-ft: #FCF1D8;
-    --color-accentB: #F2CBBB; 
-    --color-accentA: #8DA290;
-    --color-light: #DEE2D9;
-    --color-dark: #262626;
+    --color-bg: #F9F0E3;
+    --color-accentB: #D6D8BA; 
+    --color-accentA: #8C9474;
+    --color-light: #E4DAD0;
+    --color-dark: #082C1D;
     --transition: all 400ms ease;
-    --container-width-l: 75%;
-    --container-width-m: 86%;
-    --container-width-s: 80%;
-    --container-width-page: 85%;
   }
 
   html{
@@ -41,7 +37,7 @@
   }
 
   body{
-    font-family: "Quicksand" , sans-serif;
+    font-family: "Roboto", serif;
     background-color: var(--color-bg);
     color: black;
     line-height: 1.6;
@@ -60,7 +56,7 @@
     --s: 50px;
     --t: 5px; 
     padding: 4em;
-    outline: var(--t) solid var(--color-ft); 
+    outline: var(--t) solid var(--color-dark); 
     outline-offset: calc(-1*var(--t));
     mask:
       conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
@@ -75,6 +71,7 @@
   }
 
   h1, h2, h3, h4, h5 {
+    color: var(--color-dark);
     font-weight: 500;
   }
 
@@ -90,12 +87,12 @@
   }
 
   a{
-    color: var(--color-ft);
+    color: var(--color-dark);
     transition: var(--transition);
   }
 
   a:hover {
-    color: black;
+    color: var(--color-accentA);
   }
 
   .btn {
@@ -110,15 +107,15 @@
   }
 
   .btn:hover{
-    background: var(--color-ft);
-    color: var(--color-dark);
+    background: var(--color-accentA);
+    color: var(--color-light);
     border-color: transparent;
   }
 
   .btn-primary{
     background: var(--color-accentB);
     color: var(--color-dark);
-    border: var(--color-accentB);
+    border: var(--color-dark);
   }
 
   /* home */
@@ -162,7 +159,7 @@
   flex-direction: column;
   gap:.3em;
   align-items: center;
-  background: var(--color-ft);
+  background: var(--color-accentB);
   padding: 1.2rem;
   border-radius: 1.2rem;
   border: 1px solid transparent;
@@ -175,7 +172,7 @@
 .contact_option:hover{
   background: var(--color-accentA);
   border-color: var(--color-accentA);
-  color: black;
+  color: var(--color-light);
 }
 
 input,textarea{
@@ -223,10 +220,11 @@ nav a{
 }
 
 nav a:hover {
-    background: var(--color-light);
+  background: var(--color-accentA);
+  color: var(--color-dark);
 }
 
 nav a.active{
-    background: var(--color-accentA);
-    color: var(--color-dark);
+  background: var(--color-dark);
+  color: var(--color-bg);
 }

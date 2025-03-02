@@ -31,7 +31,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <h5 className='rotate-90 font-thin self-center text-[1.2rem]'>Scroll Down</h5>
+        <div className='rotate-90 self-center text-[1.2rem]'>Scroll Down</div>
       </div>
     </div>
   )
