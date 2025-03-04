@@ -101,9 +101,9 @@ const Experience: React.FC = () => {
         <a href={cv} download className='btn'>Download Resume</a>
       </div>
 
-      <div className='flex flex-wrap gap-8 justify-center'>
+      <div className='flex flex-wrap gap-8 justify-center overflow-scroll'>
         {Array.from(new Set(skillList.map(skill => skill.category))).map((category) => (
-          <div key={category} className='bg-[var(--color-light)] p-6 rounded-lg w-80 shadow-xl'>
+          <div key={category} className='bg-[var(--color-light)] p-6 rounded-lg w-60 shadow-xl'>
             <h3 className='font-semibold mb-4'>{category}</h3>
             <hr className='border-t-2 border-black mb-4' />
             <div className='flex flex-col gap-4'>
