@@ -123,9 +123,10 @@ const Experience: React.FC = () => {
                     justifyContent: 'space-between', 
                     alignItems: 'flex-start',
                     flexWrap: 'wrap',
-                    gap: 2
+                    gap: 2,
+                    width: '100%'
                   }}>
-                    <Box>
+                    <Box sx={{ flex: 1 }}>
                       <Typography 
                         variant="h6" 
                         component="h3"
@@ -152,7 +153,8 @@ const Experience: React.FC = () => {
                       sx={{ 
                         color: 'gray.600',
                         fontWeight: 500,
-                        minWidth: 'fit-content'
+                        minWidth: 'fit-content',
+                        alignSelf: 'flex-end'
                       }}
                     >
                       {job.date}
