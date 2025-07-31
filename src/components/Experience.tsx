@@ -40,9 +40,8 @@ const Experience: React.FC = () => {
       position: 'Research Assistant',
       date: 'Nov 2023 – Aug 2017',
       description: [
-        'Managed 30-40 personal injury cases per month from intake to settlement.',
-        'PNegotiated settlement offers with insurance adjusters and medical providers.',
-        'Consulted with clients to strategize case handling based on individual needs.'
+        'Created regression forecasting models to schedule preventative maintenance for aircraft.',
+        'Performed data cleaning and preprocessing to identify appropriate predictors for the model.'
       ]
     },
     {
@@ -50,33 +49,50 @@ const Experience: React.FC = () => {
       position: 'Senior Paralegal',
       date: 'Jan 2019 – Jan 2020',
       description: [
-        'Created regression forecasting models to schedule preventative maintenance for aircraft.',
-        'Performed data cleaning and preprocessing to identify appropriate predictors for the model.'
+        'Managed 30-40 personal injury cases per month from intake to settlement.',
+        'Negotiated settlement offers with insurance adjusters and medical providers.',
+        'Consulted with clients to strategize case handling based on individual needs.'
       ]
     }
   ]
 
   return (
-    <div className='page justify-center items-center gap-10' id='experience'>
+    <div className='page justify-center items-center' id='experience'>
       <div className='header'>
         <h3>Employment History</h3>
         <h2>Experience</h2>
-        <div className='text-center'>
-          Full-Stack Software Engineer with 3 years of experience designing and scaling production SaaS platforms. Skilled in both front-end and back-end technologies, with a strong focus on system performance and cross-functional collaboration. Led complex technical migrations, backend refactors, and database redesigns in partnership with product, design, and engineering teams. Passionate about building scalable systems, improving development processes, and contributing to user-centric platforms.
-        </div>  
       </div>
 
 
       <div className="w-full max-w-4xl mx-auto px-6">
         {/* Download Resume Button */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-12">
           <a href={cv} download className='btn'>
             Download Resume
           </a>
         </div>
 
         {/* Experience Accordion */}
-        <div className="space-y-4">
+        <div className="flex gap-10">
+        <div className="w-1/2">
+            <div className=" rounded-lg  p-6 border-l-4 border-[var(--color-accentA)]">
+              <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-4">
+                Summary
+              </h3>
+              <div className = 'flex flex-col gap-3 text-gray-700 leading-relaxed text-base'>
+              <p>
+                Full-Stack Software Engineer with 3 years of experience designing and scaling production SaaS platforms. Skilled in both front-end and back-end technologies, with a strong focus on system performance and cross-functional collaboration.
+              </p>
+              <p>
+                Led complex technical migrations, backend refactors, and database redesigns in partnership with product, design, and engineering teams. Passionate about building scalable systems, improving development processes, and contributing to user-centric platforms.
+              </p>
+              <p>
+                Experienced in modern web technologies including React, Next.js, TypeScript, Node.js, and Laravel. Strong advocate for clean code practices, performance optimization, and collaborative development workflows.
+              </p>
+              </div>
+            </div>
+          </div>
+        <div className="space-y-4 w-3/5 pt-14">
           {historyList.map((job, index) => (
             <Accordion 
               key={index}
@@ -182,6 +198,8 @@ const Experience: React.FC = () => {
               </AccordionDetails>
             </Accordion>
           ))}
+        </div>
+
         </div>
       </div>
     </div>

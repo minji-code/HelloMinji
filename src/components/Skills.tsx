@@ -1,5 +1,4 @@
 import React from 'react'
-import cv from '../assets/Minji_K_Suh_Resume.pdf' 
 import {FaAws} from 'react-icons/fa'
 import { TbApi } from "react-icons/tb";
 import { SiNextdotjs, SiTailwindcss, SiReact, SiTypescript, SiJavascript,SiPython, SiLaravel,SiPhp,SiNodedotjs,SiCplusplus,SiMysql,SiPostgresql,SiGit,SiLinux} from "react-icons/si";
