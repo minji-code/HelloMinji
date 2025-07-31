@@ -105,7 +105,7 @@ const Project: React.FC = () => {
         <h2>Projects</h2>
       </div>
 
-      <div className='flex flex-wrap gap-16 justify-center overflow-scroll p-4'>
+      <div className='flex flex-wrap gap-16 justify-center p-4'>
         {displayItems.map((item) => (
           'isPlaceholder' in item ? (
             <div key={item.id} className='projectDiv'>
