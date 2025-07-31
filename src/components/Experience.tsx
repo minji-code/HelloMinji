@@ -1,123 +1,188 @@
 import React from 'react'
 import cv from '../assets/Minji_K_Suh_Resume.pdf' 
-import {FaAws} from 'react-icons/fa'
-import { TbApi } from "react-icons/tb";
-import { SiNextdotjs, SiTailwindcss, SiReact, SiTypescript, SiJavascript,SiPython, SiLaravel,SiPhp,SiNodedotjs,SiCplusplus,SiMysql,SiPostgresql,SiGit,SiLinux} from "react-icons/si";
-
+import { 
+  Accordion, 
+  AccordionSummary, 
+  AccordionDetails, 
+  Typography,
+  Box
+} from '@mui/material'
+import { ExpandMore } from '@mui/icons-material'
 
 const Experience: React.FC = () => {
 
-  const skillList= [
+  const historyList = [
     {
-      category:'Frontend ',
-      icon: SiReact,
-      title: 'React'
+      company: 'Roadway Management Technologies',
+      position: 'Software Engineer',
+      date: 'Dec 2022 – Present',
+      description: [
+        'Led the full-stack migration of a production SaaS platform from Laravel to a modular React/Next.js architecture, improving code maintainability and feature velocity.',
+        'Designed and implemented performance-optimized UI components and backend API endpoints to support high-traffic user workflows.',
+        'Refactored and redesigned core database structures, resulting in increased query performance and scalability for growing data needs.',
+        'Collaborated cross-functionally with product managers, design, and platform engineers to scope and deliver features aligned with user and business goals.',
+        'Triaged and resolved production issues through rapid hotfixes and root cause analysis, minimizing downtime and improving user trust.',
+        'Defined internal development workflows using Git (branching, rebasing, code review), and contributed to improving team-wide coding standards and documentation practices.',
+      ]
     },
     {
-      category:'Frontend ',
-      icon: SiNextdotjs,
-      title: 'Next.js'
+      company: 'OneTrust',
+      position: 'Instructional Designer & Implementation Consultant',
+      date: 'Jan 2020 – June 2022',
+      description: [
+        'Integrated feedback and performance data from stakeholders to evaluate product effectiveness.',
+        'Assisted clients in assessing project scope and drafting custom statements of work.',
+        'Collaborated with cross-functional teams, including Legal and Security, to develop eLearning courses.'
+      ]
     },
     {
-      category:'Frontend ',
-      icon: SiTailwindcss,
-      title: 'Tailwind CSS'
+      company: 'Columbia Air Force Research',
+      position: 'Research Assistant',
+      date: 'Nov 2023 – Aug 2017',
+      description: [
+        'Managed 30-40 personal injury cases per month from intake to settlement.',
+        'PNegotiated settlement offers with insurance adjusters and medical providers.',
+        'Consulted with clients to strategize case handling based on individual needs.'
+      ]
     },
     {
-      category:'Frontend ',
-      icon: SiTypescript, 
-      title: 'Typescript'
-    },
-    {
-      category:'Frontend ',
-      icon: SiJavascript ,
-      title: 'JavaScript | jQuery'
-    },
-    {
-      category:'Backend ',
-      icon: SiPython,
-      title: 'Python'
-    },
-    {
-      category:'Backend ',
-      icon: SiLaravel,
-      title: 'Laravel'
-    },
-    {
-      category:'Backend ',
-      icon: SiPhp,
-      title: 'PHP'
-    },
-    {
-      category:'Backend ',
-      icon: SiNodedotjs,
-      title:'Node.js'
-    },
-    {
-      category:'Backend ',
-      icon: TbApi,
-      title:'API'
-    },
-    {
-      category:'Backend ',
-      icon: SiCplusplus,
-      title:'C++'
-    },
-    {
-      category:'Database',
-      icon: SiMysql,
-      title: 'MySql'
-    },
-    {
-      category:'Database',
-      icon:SiPostgresql,
-      title:'PostgreSql'
-    },
-    {
-      category:'Tool & Others',
-      icon: SiGit ,
-      title: 'Git'
-    },
-    {
-      category:'Tool & Others',
-      icon:SiLinux ,
-      title: 'Linux'
-    },
-    {
-      category:'Tool & Others',
-      icon: FaAws,
-      title: 'AWS'
-    },
+      company: 'JSW Law Group',
+      position: 'Senior Paralegal',
+      date: 'Jan 2019 – Jan 2020',
+      description: [
+        'Created regression forecasting models to schedule preventative maintenance for aircraft.',
+        'Performed data cleaning and preprocessing to identify appropriate predictors for the model.'
+      ]
+    }
   ]
 
   return (
     <div className='page justify-center items-center gap-10' id='experience'>
       <div className='header'>
-        <h3>What I Can Do</h3>
+        <h3>Employment History</h3>
         <h2>Experience</h2>
+        <div className='text-center'>
+          Full-Stack Software Engineer with 3 years of experience designing and scaling production SaaS platforms. Skilled in both front-end and back-end technologies, with a strong focus on system performance and cross-functional collaboration. Led complex technical migrations, backend refactors, and database redesigns in partnership with product, design, and engineering teams. Passionate about building scalable systems, improving development processes, and contributing to user-centric platforms.
+        </div>  
       </div>
 
-      <div className="flex justify-center pb-16">
-        <a href={cv} download className='btn'>Download Resume</a>
-      </div>
 
-      <div className='flex flex-wrap gap-8 justify-center'>
-        {Array.from(new Set(skillList.map(skill => skill.category))).map((category) => (
-          <div key={category} className='bg-[var(--color-light)] p-6 rounded-lg w-60 shadow-xl'>
-            <h3 className='font-semibold mb-4'>{category}</h3>
-            <hr className='border-t-2 border-black mb-4' />
-            <div className='flex flex-col gap-4'>
-              {skillList
-                .filter(skill => skill.category === category)
-                .map((skill, index) => (
-                  <div key={index} className='flex items-center gap-3 p-3'>
-                    {skill.icon && <skill.icon className='text-2xl' />}
-                    <span>{skill.title}</span>
-                  </div>
-                ))}
-            </div>
-          </div>
-        ))}
+      <div className="w-full max-w-4xl mx-auto px-6">
+        {/* Download Resume Button */}
+        <div className="flex justify-center mb-8">
+          <a href={cv} download className='btn'>
+            Download Resume
+          </a>
+        </div>
+
+        {/* Experience Accordion */}
+        <div className="space-y-4">
+          {historyList.map((job, index) => (
+            <Accordion 
+              key={index}
+              sx={{
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                borderLeft: '4px solid var(--color-accentA)',
+                '&:before': {
+                  display: 'none',
+                },
+                '&.Mui-expanded': {
+                  margin: '8px 0',
+                }
+              }}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMore />}
+                sx={{
+                  '& .MuiAccordionSummary-content': {
+                    margin: '12px 0',
+                  }
+                }}
+              >
+                <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+                  <Box sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'flex-start',
+                    flexWrap: 'wrap',
+                    gap: 2
+                  }}>
+                    <Box>
+                      <Typography 
+                        variant="h6" 
+                        component="h3"
+                        sx={{ 
+                          color: 'var(--color-dark)',
+                          fontWeight: 600,
+                          marginBottom: '4px'
+                        }}
+                      >
+                        {job.position}
+                      </Typography>
+                      <Typography 
+                        variant="subtitle1"
+                        sx={{ 
+                          color: 'var(--color-accentA)',
+                          fontWeight: 500
+                        }}
+                      >
+                        {job.company}
+                      </Typography>
+                    </Box>
+                    <Typography 
+                      variant="body2"
+                      sx={{ 
+                        color: 'gray.600',
+                        fontWeight: 500,
+                        minWidth: 'fit-content'
+                      }}
+                    >
+                      {job.date}
+                    </Typography>
+                  </Box>
+                </Box>
+              </AccordionSummary>
+              
+              <AccordionDetails sx={{ paddingTop: 0 }}>
+                <Box sx={{ spaceY: 2 }}>
+                  {job.description.map((bullet, bulletIndex) => (
+                    <Box 
+                      key={bulletIndex} 
+                      sx={{ 
+                        display: 'flex', 
+                        alignItems: 'flex-start',
+                        marginBottom: '8px'
+                      }}
+                    >
+                      <Typography 
+                        component="span"
+                        sx={{ 
+                          color: 'var(--color-accentA)',
+                          marginRight: '8px',
+                          marginTop: '2px',
+                          fontSize: '16px'
+                        }}
+                      >
+                        •
+                      </Typography>
+                      <Typography 
+                        variant="body2"
+                        sx={{ 
+                          color: 'gray.700',
+                          lineHeight: 1.6
+                        }}
+                      >
+                        {bullet}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
       </div>
     </div>
   )
