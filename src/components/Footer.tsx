@@ -1,20 +1,23 @@
-import React from 'react'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 
-const Footer: React.FC = () => {
+const FooterSection = () => {
   return (
-    <footer className='bg-[var(--color-accentB)] py-12 mt-32 w-full'>
-      <div className="flex justify-center gap-8 m-8">
-        <a className='footer_socials btn' href="https://www.linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
-        <a className='footer_socials btn' href="http://github.com/minji-code" target="_blank" rel="noopener noreferrer"><BsGithub/></a>
-      </div>
-
-      <div className='header mb-16'>
-        <h3>Minji Kim Suh</h3>
-        <h4>Software Engineer</h4>
+    <footer className="py-12 border-t border-border">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p className="font-display text-sm text-muted-foreground">
+          © 2026 Minji K. Suh
+        </p>
+        <div className="flex gap-4">
+          <a href="https://linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+            <BsLinkedin size={18} />
+          </a>
+          <a href="https://github.com/minji-code" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+            <BsGithub size={18} />
+          </a>
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer 
+export default FooterSection;

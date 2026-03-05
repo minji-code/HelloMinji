@@ -12,7 +12,7 @@ Visit the live website: [http://minji-code.github.io/HelloMinji](http://minji-co
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
 - **Icons**: React Icons
-- **Email Service**: EmailJS
+- **Animation**: Framer Motion
 - **Smooth Scrolling**: React Scroll
 - **Deployment**: GitHub Pages
 
@@ -73,12 +73,6 @@ This command will:
 1. Build the project for production
 2. Deploy the built files to the `gh-pages` branch
 3. Make your site available at the configured GitHub Pages URL
-
-
-## 📧 Contact Form
-
-The contact form uses EmailJS for sending emails. Make sure to configure your EmailJS service, template, and user ID in the `Contact.tsx` component.
-
 
 
 Built with ❤️ by Minji

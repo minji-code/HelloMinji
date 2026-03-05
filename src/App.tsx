@@ -1,24 +1,17 @@
-import React from 'react'
-import Home from './components/Home'
-import Nav from './components/Nav'
-import Project from './components/Project'
-import Experience from './components/Experience'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Skills from './components/Skills'
+import HomeSection from "./components/Home";
+import ExperienceSection from "./components/Experience";
+import EducationSection from "./components/Education";
+import SkillsSection from "./components/Skills";
+import FooterSection from "./components/Footer";
 
-const App: React.FC = () => {
-  return (
-    <div className='min-h-screen'>
-      <Home />
-      <Nav />
-      <Experience />
-      <Skills />
-      <Project />
-      <Contact />
-      <Footer />
-    </div>
-  )
-}
+const App = () => (
+  <div className="min-h-screen bg-background text-foreground">
+    <HomeSection />
+    <SkillsSection />
+    <ExperienceSection />
+    <EducationSection />
+    <FooterSection />
+  </div>
+);
 
-export default App 
+export default App;
