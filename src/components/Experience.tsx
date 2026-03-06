@@ -1,211 +1,131 @@
-import React from 'react'
-import cv from '../assets/Minji_K_Suh_Resume.pdf' 
-import { 
-  Accordion, 
-  AccordionSummary, 
-  AccordionDetails, 
-  Typography,
-  Box
-} from '@mui/material'
-import { ExpandMore } from '@mui/icons-material'
+import { motion } from "framer-motion";
 
-const Experience: React.FC = () => {
+const experiences = [
+  {
+    company: "Roadway Management Technologies",
+    period: "Dec 2022 – Present",
+    roles: [
+      {
+        title: "Technical Program Manager",
+        period: "Feb 2026 – Present",
+        bullets: [
+          "Serve as the primary technical translator between executive leadership and engineering to align technical roadmaps with long-term business goals.",
+          "Directing discovery, design, and execution phases for major platform enhancements, ensuring operational readiness and scalability.",
+          "Identifying and resolving cross-team dependencies to maintain high feature velocity and ensure on-time delivery.",
+          "Leading root cause analysis for production issues and defining internal standards to protect system stability.",
+        ],
+      },
+      {
+        title: "Software Engineer",
+        period: "Dec 2022 – Jan 2026",
+        bullets: [
+          "Led the full-stack migration of a production SaaS platform from Laravel to React/Next.js, improving code maintainability.",
+          "Designed performance-optimized UI components and backend API endpoints while refactoring core database structures.",
+          "Implemented scalable system updates and triaged production issues through rapid hotfixes to minimize downtime.",
+          "Standardized internal development workflows using Git and contributed to team-wide documentation practices.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "OneTrust",
+    period: "Jan 2020 – Jun 2022",
+    roles: [
+      {
+        title: "Instructional Design Consultant",
+        period: "Aug 2020 – Jun 2022",
+        bullets: [
+          "Project Scoping: Assisted clients in breaking down complex project requirements by drafting explicit custom Statements of Work (SOW).",
+          "Cross-Functional Delivery: Collaborated with Legal, Security, and SMEs to develop technical eLearning courses, including Incident Preparedness and Data Privacy.",
+          "Efficiency Documentation: Created software guidelines, project procedures, and product enhancement trackers to streamline departmental efficiencies.",
+          "Stakeholder Feedback: Integrated performance data and stakeholder feedback to evaluate product effectiveness and drive iterative improvements.",
+        ],
+      },
+      {
+        title: "Implementation Consultant",
+        period: "Jan 2020 – Aug 2020",
+        bullets: [
+          "Project Management: Managed functional implementation projects and platform adoption using detailed project plans and milestone tracking.",
+          "Product Advocacy: Acted as a bridge for customers, representing technical issues and product recommendations directly to Product Management.",
+          "Solution Architecture: Constructed comprehensive technical solutions when faced with product challenges during the customer onboarding phase.",
+          "Compliance Consulting: Consulted customers on data privacy compliance (GDPR/CCPA) within various technical frameworks and system limitations.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Georgia Institute of Technology",
+    period: "Dec 2018 – Jan 2020",
+    roles: [
+      {
+        title: "Research Assistant",
+        period: "Dec 2018 – Jan 2020",
+        bullets: [
+          "Risk Mitigation: Created regression models to forecast aircraft failure, enabling preventative maintenance scheduling for the Colombian Airforce.",
+          "Data Engineering: Performed rigorous data cleaning and predictor selection to ensure the accuracy of forecasting models.",
+          "Tool Development: Built a custom forecasting tool using Visual Basic (VBA) to automate weekly analysis reports for four different aircraft types.",
+          "Technical Reporting: Delivered data-driven analysis reports to stakeholders, translating statistical findings into actionable maintenance schedules.",
+        ],
+      },
+    ],
+  },
+];
 
-  const historyList = [
-    {
-      company: 'Roadway Management Technologies',
-      position: 'Software Engineer',
-      date: 'Dec 2022 – Present',
-      description: [
-        'Led the full-stack migration of a production SaaS platform from Laravel to a modular React/Next.js architecture, improving code maintainability and feature velocity.',
-        'Designed and implemented performance-optimized UI components and backend API endpoints to support high-traffic user workflows.',
-        'Refactored and redesigned core database structures, resulting in increased query performance and scalability for growing data needs.',
-        'Collaborated cross-functionally with product managers, design, and platform engineers to scope and deliver features aligned with user and business goals.',
-        'Triaged and resolved production issues through rapid hotfixes and root cause analysis, minimizing downtime and improving user trust.',
-        'Defined internal development workflows using Git (branching, rebasing, code review), and contributed to improving team-wide coding standards and documentation practices.',
-      ]
-    },
-    {
-      company: 'OneTrust',
-      position: 'Instructional Designer & Implementation Consultant',
-      date: 'Jan 2020 – June 2022',
-      description: [
-        'Integrated feedback and performance data from stakeholders to evaluate product effectiveness.',
-        'Assisted clients in assessing project scope and drafting custom statements of work.',
-        'Collaborated with cross-functional teams, including Legal and Security, to develop eLearning courses.'
-      ]
-    },
-    {
-      company: 'Columbia Air Force Research',
-      position: 'Research Assistant',
-      date: 'Nov 2023 – Aug 2017',
-      description: [
-        'Created regression forecasting models to schedule preventative maintenance for aircraft.',
-        'Performed data cleaning and preprocessing to identify appropriate predictors for the model.'
-      ]
-    },
-    {
-      company: 'JSW Law Group',
-      position: 'Senior Paralegal',
-      date: 'Jan 2019 – Jan 2020',
-      description: [
-        'Managed 30-40 personal injury cases per month from intake to settlement.',
-        'Negotiated settlement offers with insurance adjusters and medical providers.',
-        'Consulted with clients to strategize case handling based on individual needs.'
-      ]
-    }
-  ]
-
+const ExperienceSection = () => {
   return (
-    <div className='page justify-center items-center' id='experience'>
-      <div className='header'>
-        <h3>Employment History</h3>
-        <h2>Experience</h2>
-      </div>
+    <section className="py-24" id="experience">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16"
+        >
+          Experience
+        </motion.h2>
 
-
-      <div className="w-full max-w-4xl mx-auto px-6">
-        {/* Download Resume Button */}
-        <div className="flex justify-center mb-12">
-          <a href={cv} download className='btn'>
-            Download Resume
-          </a>
-        </div>
-
-        {/* Experience Accordion */}
-        <div className="flex gap-10">
-        <div className="w-1/2">
-            <div className=" rounded-lg  p-6 border-l-4 border-[var(--color-accentA)]">
-              <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-4">
-                Summary
-              </h3>
-              <div className = 'flex flex-col gap-3 text-gray-700 leading-relaxed text-base'>
-              <p>
-                Full-Stack Software Engineer with 3 years of experience designing and scaling production SaaS platforms. Skilled in both front-end and back-end technologies, with a strong focus on system performance and cross-functional collaboration.
-              </p>
-              <p>
-                Led complex technical migrations, backend refactors, and database redesigns in partnership with product, design, and engineering teams. Passionate about building scalable systems, improving development processes, and contributing to user-centric platforms.
-              </p>
-              <p>
-                Experienced in modern web technologies including React, Next.js, TypeScript, Node.js, and Laravel. Strong advocate for clean code practices, performance optimization, and collaborative development workflows.
-              </p>
-              </div>
-            </div>
-          </div>
-        <div className="space-y-4 w-3/5 pt-14">
-          {historyList.map((job, index) => (
-            <Accordion 
-              key={index}
-              sx={{
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                borderLeft: '4px solid var(--color-accentA)',
-                '&:before': {
-                  display: 'none',
-                },
-                '&.Mui-expanded': {
-                  margin: '8px 0',
-                }
-              }}
+        <div className="space-y-16">
+          {experiences.map((exp, i) => (
+            <motion.div
+              key={exp.company}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
             >
-              <AccordionSummary
-                expandIcon={<ExpandMore />}
-                sx={{
-                  '& .MuiAccordionSummary-content': {
-                    margin: '12px 0',
-                  }
-                }}
-              >
-                <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-                  <Box sx={{ 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    alignItems: 'flex-start',
-                    flexWrap: 'wrap',
-                    gap: 2,
-                    width: '100%'
-                  }}>
-                    <Box sx={{ flex: 1 }}>
-                      <Typography 
-                        variant="h6" 
-                        component="h3"
-                        sx={{ 
-                          color: 'var(--color-dark)',
-                          fontWeight: 600,
-                          marginBottom: '4px'
-                        }}
-                      >
-                        {job.position}
-                      </Typography>
-                      <Typography 
-                        variant="subtitle1"
-                        sx={{ 
-                          color: 'var(--color-accentA)',
-                          fontWeight: 500
-                        }}
-                      >
-                        {job.company}
-                      </Typography>
-                    </Box>
-                    <Typography 
-                      variant="body2"
-                      sx={{ 
-                        color: 'gray.600',
-                        fontWeight: 500,
-                        minWidth: 'fit-content',
-                        alignSelf: 'flex-end'
-                      }}
-                    >
-                      {job.date}
-                    </Typography>
-                  </Box>
-                </Box>
-              </AccordionSummary>
-              
-              <AccordionDetails sx={{ paddingTop: 0 }}>
-                <Box sx={{ spaceY: 2 }}>
-                  {job.description.map((bullet, bulletIndex) => (
-                    <Box 
-                      key={bulletIndex} 
-                      sx={{ 
-                        display: 'flex', 
-                        alignItems: 'flex-start',
-                        marginBottom: '8px'
-                      }}
-                    >
-                      <Typography 
-                        component="span"
-                        sx={{ 
-                          color: 'var(--color-accentA)',
-                          marginRight: '8px',
-                          marginTop: '2px',
-                          fontSize: '16px'
-                        }}
-                      >
-                        •
-                      </Typography>
-                      <Typography 
-                        variant="body2"
-                        sx={{ 
-                          color: 'gray.700',
-                          lineHeight: 1.6
-                        }}
-                      >
-                        {bullet}
-                      </Typography>
-                    </Box>
-                  ))}
-                </Box>
-              </AccordionDetails>
-            </Accordion>
+              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-6">
+                <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
+                  {exp.company}
+                </h3>
+                <span className="text-muted-foreground text-sm mt-1 md:mt-0">{exp.period}</span>
+              </div>
+
+              <div className="border-l-2 border-accent/30 pl-6 space-y-10">
+                {exp.roles.map((role) => (
+                  <div key={role.title}>
+                    <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
+                      <h4 className="font-display font-semibold text-foreground flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-accent -ml-[1.85rem] mr-2 shrink-0" />
+                        {role.title}
+                      </h4>
+                      <span className="text-muted-foreground text-sm">{role.period}</span>
+                    </div>
+                    <ul className="space-y-2">
+                      {role.bullets.map((bullet, j) => (
+                        <li key={j} className="text-muted-foreground text-sm leading-relaxed pl-1">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
-
-        </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Experience 
+export default ExperienceSection;

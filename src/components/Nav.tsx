@@ -1,19 +1,29 @@
-import React from 'react'
-import {Link} from 'react-scroll'
-import {AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineMail} from 'react-icons/ai'
-import {BsFilePerson} from 'react-icons/bs'
-import { FaTools } from 'react-icons/fa'
+import { NavLink as RouterNavLink, NavLinkProps } from "react-router-dom";
+import { forwardRef } from "react";
+import { cn } from "../../lib/utils";
 
-const Nav: React.FC = () => {
-  return (
-    <nav>
-      <Link to='home' spy={true} smooth={true} offset={-80} duration={500}><AiOutlineHome /></Link>
-      <Link to='experience' spy={true} smooth={true} offset={-30} duration={500}><BsFilePerson /></Link>
-      <Link to='skills' spy={true} smooth={true} offset={-30} duration={500}><FaTools /></Link>
-      <Link to='project' spy={true} smooth={true} offset={-30} duration={500}><AiOutlineFundProjectionScreen /></Link>
-      <Link to='contact' spy={true} smooth={true} offset={-30} duration={500}><AiOutlineMail /></Link>
-    </nav>
-  )
+interface NavLinkCompatProps extends Omit<NavLinkProps, "className"> {
+  className?: string;
+  activeClassName?: string;
+  pendingClassName?: string;
 }
 
-export default Nav 
+const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
+  ({ className, activeClassName, pendingClassName, to, ...props }, ref) => {
+    return (
+      <RouterNavLink
+        ref={ref}
+        to={to}
+        className={({ isActive, isPending }: { isActive: boolean; isPending: boolean }) =>
+          cn(className, isActive && activeClassName, isPending && pendingClassName)
+        }
+        {...props}
+      />
+    );
+  },
+);
+
+NavLink.displayName = "NavLink";
+
+export { NavLink };
+export default NavLink;

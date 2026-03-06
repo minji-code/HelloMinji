@@ -1,121 +1,107 @@
-import React from 'react'
-import {FaAws} from 'react-icons/fa'
-import { TbApi } from "react-icons/tb";
-import { SiNextdotjs, SiTailwindcss, SiReact, SiTypescript, SiJavascript,SiPython, SiLaravel,SiPhp,SiNodedotjs,SiCplusplus,SiMysql,SiPostgresql,SiGit,SiLinux} from "react-icons/si";
+import { motion } from "framer-motion";
 
+const skillCategories = [
+  {
+    title: "Program Management",
+    skills: [
+      "Full SDLC Ownership",
+      "Technical Roadmapping",
+      "Dependency Management",
+      "Risk Mitigation & Contingency Planning",
+      "Resource Allocation",
+      "Stakeholder Management",
+      "Change Management",
+    ],
+  },
+  {
+    title: "Engineering & Architecture",
+    skills: [
+      "System Design",
+      "Microservices",
+      "API Design (REST)",
+      "Frontend/Backend Integration",
+      "CI/CD Pipelines",
+      "Scalability & Performance Optimization",
+    ],
+  },
+  {
+    title: "Methodologies & Frameworks",
+    skills: [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Sprint Planning",
+      "Root Cause Analysis (RCA)",
+      "Technical Requirement Document (TRD) Authoring",
+    ],
+  },
+  {
+    title: "Tools & Infrastructure",
+    skills: [
+      "Jira",
+      "Confluence",
+      "AWS (Amplify/S3)",
+      "Git (Branching/Rebasing)",
+      "Postman",
+      "Playwright",
+      "Vercel",
+      "MySQL/PostgreSQL",
+    ],
+  },
+  {
+    title: "Data & Analytics",
+    skills: [
+      "Regression Modeling",
+      "Data Visualization",
+      "Business Intelligence (BI)",
+      "SQL",
+      "VBA",
+      "Process Engineering",
+    ],
+  },
+];
 
-const Skills: React.FC = () => {
-
-  const skillList= [
-    {
-      category:'Frontend ',
-      icon: SiReact,
-      title: 'React'
-    },
-    {
-      category:'Frontend ',
-      icon: SiNextdotjs,
-      title: 'Next.js'
-    },
-    {
-      category:'Frontend ',
-      icon: SiTailwindcss,
-      title: 'Tailwind CSS'
-    },
-    {
-      category:'Frontend ',
-      icon: SiTypescript, 
-      title: 'Typescript'
-    },
-    {
-      category:'Frontend ',
-      icon: SiJavascript ,
-      title: 'JavaScript | jQuery'
-    },
-    {
-      category:'Backend ',
-      icon: SiPython,
-      title: 'Python'
-    },
-    {
-      category:'Backend ',
-      icon: SiLaravel,
-      title: 'Laravel'
-    },
-    {
-      category:'Backend ',
-      icon: SiPhp,
-      title: 'PHP'
-    },
-    {
-      category:'Backend ',
-      icon: SiNodedotjs,
-      title:'Node.js'
-    },
-    {
-      category:'Backend ',
-      icon: TbApi,
-      title:'API'
-    },
-    {
-      category:'Backend ',
-      icon: SiCplusplus,
-      title:'C++'
-    },
-    {
-      category:'Database',
-      icon: SiMysql,
-      title: 'MySql'
-    },
-    {
-      category:'Database',
-      icon:SiPostgresql,
-      title:'PostgreSql'
-    },
-    {
-      category:'Tool & Others',
-      icon: SiGit ,
-      title: 'Git'
-    },
-    {
-      category:'Tool & Others',
-      icon:SiLinux ,
-      title: 'Linux'
-    },
-    {
-      category:'Tool & Others',
-      icon: FaAws,
-      title: 'AWS'
-    },
-  ]
-
+const SkillsSection = () => {
   return (
-    <div className='page justify-center items-center gap-10' id='skills'>
-      <div className='header'>
-        <h3>What I Can Do</h3>
-        <h2>Skills</h2>
-      </div>
+    <section className="py-24 bg-card" id="skills">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16"
+        >
+          Technical Skills
+        </motion.h2>
 
-      <div className='flex flex-wrap gap-8 justify-center'>
-        {Array.from(new Set(skillList.map(skill => skill.category))).map((category) => (
-          <div key={category} className='bg-[var(--color-light)] p-6 rounded-lg w-60 shadow-xl'>
-            <h3 className='font-semibold mb-4'>{category}</h3>
-            <hr className='border-t-2 border-black mb-4' />
-            <div className='flex flex-col gap-4'>
-              {skillList
-                .filter(skill => skill.category === category)
-                .map((skill, index) => (
-                  <div key={index} className='flex items-center gap-3 p-3'>
-                    {skill.icon && <skill.icon className='text-2xl' />}
-                    <span>{skill.title}</span>
-                  </div>
+        <div className="grid md:grid-cols-2 gap-10">
+          {skillCategories.map((category, i) => (
+            <motion.div
+              key={category.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <h3 className="font-display text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-4">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1.5 bg-background border border-border rounded-md text-sm text-foreground font-body"
+                  >
+                    {skill}
+                  </span>
                 ))}
-            </div>
-          </div>
-        ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Skills 
+export default SkillsSection;
