@@ -21,7 +21,7 @@ const EducationSection = () => {
           className="flex items-start gap-5"
         >
           <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-            <PiGraduationCap className="text-accent" size={24} />
+            <PiGraduationCap className="text-primary" size={24} />
           </div>
           <div>
             <h3 className="font-display text-xl font-bold text-foreground">

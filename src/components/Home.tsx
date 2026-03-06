@@ -21,7 +21,7 @@ const HomeSection: React.FC = () => {
   return (
     <section className="min-h-[90vh] flex items-center relative overflow-hidden">
       {/* Decorative accent */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-accent/5 -skew-x-12 translate-x-20" />
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-accent -skew-x-12 translate-x-20" />
       
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="max-w-4xl">
@@ -30,7 +30,7 @@ const HomeSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-display text-accent font-semibold tracking-widest uppercase text-sm mb-4">
+            <p className="font-display text-primary/60 font-semibold tracking-widest uppercase text-sm mb-4">
               Technical Program Manager
             </p>
           </motion.div>
@@ -39,11 +39,11 @@ const HomeSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-primary leading-[0.95] mb-8"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent leading-[0.95] mb-8"
           >
             Minji K.
             <br />
-            <span className="text-accent">Suh</span>
+            <span className="text-primary">Suh</span>
           </motion.h1>
 
           <motion.p

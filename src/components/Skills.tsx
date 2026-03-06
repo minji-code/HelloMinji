@@ -47,7 +47,7 @@ const SkillsSection = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <h3 className="font-display text-sm font-semibold tracking-widest uppercase text-accent mb-4">
+              <h3 className="font-display text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-4">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">
