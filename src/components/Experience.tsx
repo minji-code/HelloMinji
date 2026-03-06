@@ -28,17 +28,43 @@ const experiences = [
     ],
   },
   {
-    company: "OneTrust, LLC",
+    company: "OneTrust",
     period: "Jan 2020 – Jun 2022",
     roles: [
       {
         title: "Instructional Design Consultant",
-        period: "Jan 2020 – Jun 2022",
+        period: "Aug 2020 – Jun 2022",
         bullets: [
-          "Partnered with cross-functional Legal and Security teams to define requirements and deliver complex technical training.",
-          "Consulted with clients to assess project scope and drafted custom Statements of Work aligned with business objectives.",
-          "Evaluated product effectiveness by integrating stakeholder feedback and performance data into project iterations.",
-          "Managed end-to-end delivery of eLearning courses by coordinating between technical and non-technical departments.",
+          "Project Scoping: Assisted clients in breaking down complex project requirements by drafting explicit custom Statements of Work (SOW).",
+          "Cross-Functional Delivery: Collaborated with Legal, Security, and SMEs to develop technical eLearning courses, including Incident Preparedness and Data Privacy.",
+          "Efficiency Documentation: Created software guidelines, project procedures, and product enhancement trackers to streamline departmental efficiencies.",
+          "Stakeholder Feedback: Integrated performance data and stakeholder feedback to evaluate product effectiveness and drive iterative improvements.",
+        ],
+      },
+      {
+        title: "Implementation Consultant",
+        period: "Jan 2020 – Aug 2020",
+        bullets: [
+          "Project Management: Managed functional implementation projects and platform adoption using detailed project plans and milestone tracking.",
+          "Product Advocacy: Acted as a bridge for customers, representing technical issues and product recommendations directly to Product Management.",
+          "Solution Architecture: Constructed comprehensive technical solutions when faced with product challenges during the customer onboarding phase.",
+          "Compliance Consulting: Consulted customers on data privacy compliance (GDPR/CCPA) within various technical frameworks and system limitations.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Georgia Institute of Technology",
+    period: "Dec 2018 – Jan 2020",
+    roles: [
+      {
+        title: "Research Assistant",
+        period: "Dec 2018 – Jan 2020",
+        bullets: [
+          "Risk Mitigation: Created regression models to forecast aircraft failure, enabling preventative maintenance scheduling for the Colombian Airforce.",
+          "Data Engineering: Performed rigorous data cleaning and predictor selection to ensure the accuracy of forecasting models.",
+          "Tool Development: Built a custom forecasting tool using Visual Basic (VBA) to automate weekly analysis reports for four different aircraft types.",
+          "Technical Reporting: Delivered data-driven analysis reports to stakeholders, translating statistical findings into actionable maintenance schedules.",
         ],
       },
     ],

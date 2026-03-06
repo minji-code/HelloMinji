@@ -4,24 +4,60 @@ const skillCategories = [
   {
     title: "Program Management",
     skills: [
-      "SDLC Ownership",
+      "Full SDLC Ownership",
       "Technical Roadmapping",
       "Dependency Management",
-      "Risk Mitigation",
-      "Stakeholder Communication",
+      "Risk Mitigation & Contingency Planning",
+      "Resource Allocation",
+      "Stakeholder Management",
+      "Change Management",
     ],
   },
   {
     title: "Engineering & Architecture",
-    skills: ["React", "Next.js", "TypeScript", "Node.js", "PHP/Laravel", "C++", "API Design"],
+    skills: [
+      "System Design",
+      "Microservices",
+      "API Design (REST)",
+      "Frontend/Backend Integration",
+      "CI/CD Pipelines",
+      "Scalability & Performance Optimization",
+    ],
   },
   {
-    title: "Data & Infrastructure",
-    skills: ["MySQL", "PostgreSQL", "AWS (Amplify)", "Linux", "Postman"],
+    title: "Methodologies & Frameworks",
+    skills: [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Sprint Planning",
+      "Root Cause Analysis (RCA)",
+      "Technical Requirement Document (TRD) Authoring",
+    ],
   },
   {
-    title: "Workflows",
-    skills: ["Git (Branching/Rebasing)", "npm/pnpm", "Playwright", "Root Cause Analysis"],
+    title: "Tools & Infrastructure",
+    skills: [
+      "Jira",
+      "Confluence",
+      "AWS (Amplify/S3)",
+      "Git (Branching/Rebasing)",
+      "Postman",
+      "Playwright",
+      "Vercel",
+      "MySQL/PostgreSQL",
+    ],
+  },
+  {
+    title: "Data & Analytics",
+    skills: [
+      "Regression Modeling",
+      "Data Visualization",
+      "Business Intelligence (BI)",
+      "SQL",
+      "VBA",
+      "Process Engineering",
+    ],
   },
 ];
 
