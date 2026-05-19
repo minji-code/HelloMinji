@@ -9,10 +9,13 @@ const experiences = [
         title: "Technical Program Manager",
         period: "Feb 2026 – Present",
         bullets: [
-          "Serve as the primary technical translator between executive leadership and engineering to align technical roadmaps with long-term business goals.",
-          "Directing discovery, design, and execution phases for major platform enhancements, ensuring operational readiness and scalability.",
-          "Identifying and resolving cross-team dependencies to maintain high feature velocity and ensure on-time delivery.",
-          "Leading root cause analysis for production issues and defining internal standards to protect system stability.",
+          "Lead end-to-end delivery of two parallel AI/ML pipelines — computer vision road distress detection and LLM-based pavement condition scoring — coordinating hardware, data engineering, infrastructure, DevOps, and front-end teams.",
+          "Manage a 10+ person team and two external contractors (CV and DevOps), owning standup structure, board governance, SOW alignment, and milestone gate tracking across dual Jira project boards.",
+          "Partner with the CTO and CPO on architectural scope decisions, including a major pipeline pivot from an LLM orchestrator to a deterministic runner that eliminated non-determinism and per-image token costs while preserving all CV tool targets.",
+          "Own story grooming and delivery readiness: author Jira epics and stories with acceptance criteria, definition of done, and milestone indicators; maintain ticket hygiene across ENG and IP project boards.",
+          "Formalize contractor onboarding and standup governance, defining ticket ownership rules between internal and external teams to eliminate board confusion.",
+          "Manage vendor SOW amendments, coordinating scope changes with the external CV team to realign deliverables as architectural decisions and business priorities evolve.",
+          "Maintain living program documentation — initiative context files, milestone plans, and architectural decision records — for the engineering and product org.",
         ],
       },
       {
