@@ -6,33 +6,34 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 220 30% 12%;
+    /* Thai constellation monstera palette */
+    --background: 34 40% 92%;      /* warm cream */
+    --foreground: 140 20% 12%;     /* dark forest */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 30% 12%;
+    --card: 36 30% 97%;
+    --card-foreground: 140 20% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 12%;
+    --popover: 36 30% 97%;
+    --popover-foreground: 140 20% 12%;
 
-    --primary: 188, 9%, 32%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 134 38% 22%;        /* deep forest green (leaf) */
+    --primary-foreground: 34 40% 92%;
 
-    --secondary: 220 15% 90%;
-    --secondary-foreground: 220 30% 12%;
+    --secondary: 35 25% 82%;       /* warm tan/beige */
+    --secondary-foreground: 140 20% 12%;
 
-    --muted: 220 15% 93%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 35 20% 88%;
+    --muted-foreground: 34 12% 38%; /* warm grey — WCAG AA */
 
-    --accent: 123, 14%, 73%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 29 42% 44%;          /* warm brown #A06F42 */
+    --accent-foreground: 34 40% 92%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 188, 9%, 32%;
-    --input: 220 15% 88%;
-    --ring: 12 76% 61%;
+    --border: 134 38% 22%;
+    --input: 35 20% 85%;
+    --ring: 29 42% 44%;
 
     --radius: 0.75rem;
 

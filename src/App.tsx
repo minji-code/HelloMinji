@@ -7,8 +7,8 @@ import FooterSection from "./components/Footer";
 const App = () => (
   <div className="min-h-screen bg-background text-foreground">
     <HomeSection />
-    <SkillsSection />
     <ExperienceSection />
+    <SkillsSection />
     <EducationSection />
     <FooterSection />
   </div>

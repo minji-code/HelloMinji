@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { LuMapPin } from "react-icons/lu";
+import monsteraImg from "../assets/Gemini_Generated_Image.png";
+import profilePic from "../assets/profilepic.png";
 
 const HomeSection: React.FC = () => {
   const [copiedMessage, setCopiedMessage] = useState<string | null>(null);
@@ -20,8 +22,20 @@ const HomeSection: React.FC = () => {
 
   return (
     <section className="min-h-[90vh] flex items-center relative overflow-hidden">
-      {/* Decorative accent */}
+      {/* Terra cotta diagonal strip */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-accent -skew-x-12 translate-x-20" />
+
+      {/* Monstera illustration — bottom right, in front of strip */}
+      <div className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none">
+        <img src={monsteraImg} alt="" className="w-full h-full object-contain" />
+      </div>
+
+      {/* Profile photo — at the intersection of content and strip */}
+      <div className="hidden md:block absolute right-[18%] top-1/5 -translate-y-1/2 z-20">
+        <div className="w-28 h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-[hsl(123,14%,67%)]">
+          <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover" />
+        </div>
+      </div>
       
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="max-w-4xl">
@@ -52,8 +66,16 @@ const HomeSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
           >
-            Bridging the gap between executive leadership and engineering teams. 
-            3+ years delivering production SaaS platforms with full-lifecycle ownership.
+            Technical Program Manager with hands-on engineering depth. Proven track record leading AI/ML pipelines, SaaS platform migrations, and cross-functional delivery across product, engineering, and exec stakeholders.
+</motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="text-primary font-semibold text-sm mb-10"
+          >
+            Open to Senior TPM roles
           </motion.p>
 
           <motion.div
