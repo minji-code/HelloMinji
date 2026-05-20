@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import { PiGraduationCap } from "react-icons/pi";
+import branch from "../assets/SCR-20260520-obdg.png";
+import sprig from "../assets/SCR-20260520-oazd.png";
 
 const EducationSection = () => {
   return (
-    <section className="py-24 bg-white" id="education">
+    <section className="py-24 bg-white relative overflow-hidden" id="education">
+      <img src={branch} alt="" aria-hidden="true" className="absolute top-4 -right-2 w-20 lg:w-28 opacity-[0.35] mix-blend-multiply pointer-events-none select-none rotate-[8deg]" />
+      <img src={sprig} alt="" aria-hidden="true" className="absolute -bottom-2 left-6 w-16 lg:w-20 opacity-[0.35] mix-blend-multiply pointer-events-none select-none -rotate-[15deg]" />
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

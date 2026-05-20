@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import fiddle from "../assets/SCR-20260520-obeu.png";
 
 const experiences = [
   {
@@ -76,7 +77,8 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-24 bg-white" id="experience">
+    <section className="py-36 bg-white relative overflow-hidden" id="experience">
+      <img src={fiddle} alt="" aria-hidden="true" className="absolute bottom-0 right-0 w-44 lg:w-56 opacity-20 mix-blend-multiply pointer-events-none select-none" />
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

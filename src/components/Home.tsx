@@ -161,7 +161,7 @@ interface ContactChipProps {
 
 const ContactChip = ({ icon, text, href, onClick }: ContactChipProps) => {
   const classes =
-    "flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer";
+    "flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer";
 
   if (onClick) {
     return (
