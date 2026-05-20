@@ -3,7 +3,7 @@ import { PiGraduationCap } from "react-icons/pi";
 
 const EducationSection = () => {
   return (
-    <section className="py-24 bg-card" id="education">
+    <section className="py-24 bg-white" id="education">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

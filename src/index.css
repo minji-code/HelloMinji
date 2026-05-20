@@ -6,34 +6,42 @@
 
 @layer base {
   :root {
-    /* Thai constellation monstera palette */
-    --background: 34 40% 92%;      /* warm cream */
-    --foreground: 140 20% 12%;     /* dark forest */
+    /* ── Palette ─────────────────────────────────────────
+       #FEF6E8  warm cream     → background, primary-fg, accent-fg
+       #E6C9A9  warm beige     → secondary
+       #9DB794  light sage     → muted bg
+       #60855A  medium sage    → border  (3.92:1 on cream — non-text/large text)
+       #A47346  warm brown     → accent  (3.84:1 on cream — decorative/large text)
+       #214B2D  deep forest    → primary, foreground
+       muted-fg hsl(137 25% 30%) — derived for WCAG AA body text (6.74:1 cream, 4.56:1 beige)
+    ──────────────────────────────────────────────────── */
+    --background: 38 92% 95%;
+    --foreground: 137 39% 21%;
 
-    --card: 36 30% 97%;
-    --card-foreground: 140 20% 12%;
+    --card: 32 55% 96%;
+    --card-foreground: 137 39% 21%;
 
-    --popover: 36 30% 97%;
-    --popover-foreground: 140 20% 12%;
+    --popover: 32 55% 96%;
+    --popover-foreground: 137 39% 21%;
 
-    --primary: 134 38% 22%;        /* deep forest green (leaf) */
-    --primary-foreground: 34 40% 92%;
+    --primary: 137 39% 21%;
+    --primary-foreground: 38 92% 95%;
 
-    --secondary: 35 25% 82%;       /* warm tan/beige */
-    --secondary-foreground: 140 20% 12%;
+    --secondary: 32 55% 78%;
+    --secondary-foreground: 137 39% 21%;
 
-    --muted: 35 20% 88%;
-    --muted-foreground: 34 12% 38%; /* warm grey — WCAG AA */
+    --muted: 105 20% 65%;
+    --muted-foreground: 137 25% 30%;
 
-    --accent: 29 42% 44%;          /* warm brown #A06F42 */
-    --accent-foreground: 34 40% 92%;
+    --accent: 29 40% 46%;
+    --accent-foreground: 38 92% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 134 38% 22%;
-    --input: 35 20% 85%;
-    --ring: 29 42% 44%;
+    --border: 112 19% 44%;
+    --input: 32 40% 88%;
+    --ring: 29 40% 46%;
 
     --radius: 0.75rem;
 
