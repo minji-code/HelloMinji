@@ -1,3 +1,4 @@
+import Nav from "./components/Nav";
 import HomeSection from "./components/Home";
 import ExperienceSection from "./components/Experience";
 import EducationSection from "./components/Education";
@@ -6,6 +7,7 @@ import FooterSection from "./components/Footer";
 
 const App = () => (
   <div className="min-h-screen bg-background text-foreground">
+    <Nav />
     <HomeSection />
     <ExperienceSection />
     <SkillsSection />

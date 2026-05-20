@@ -101,19 +101,22 @@ const HomeSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
+            className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed"
           >
-            Technical Program Manager with hands-on engineering depth. Proven track record leading AI/ML pipelines, SaaS platform migrations, and cross-functional delivery across product, engineering, and exec stakeholders.
+            Shipped production AI/ML systems and full-stack SaaS platforms as both engineer and TPM — now driving cross-functional delivery at the intersection of infra, data, and product.
           </motion.p>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="text-primary font-semibold text-sm mb-10"
+            className="mb-10"
           >
-            Open to Senior TPM roles
-          </motion.p>
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-semibold tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              Open to Senior TPM roles
+            </span>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
