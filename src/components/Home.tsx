@@ -30,7 +30,7 @@ const HomeSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-display text-primary/60 font-semibold tracking-widest uppercase text-sm mb-4">
+            <p className="font-display text-primary font-semibold tracking-widest uppercase text-sm mb-4">
               Technical Program Manager
             </p>
           </motion.div>
@@ -39,7 +39,7 @@ const HomeSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-accent leading-[0.95] mb-8"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.95] mb-8"
           >
             Minji K.
             <br />
@@ -102,7 +102,7 @@ interface ContactChipProps {
 
 const ContactChip = ({ icon, text, href, onClick }: ContactChipProps) => {
   const classes =
-    "flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-foreground hover:border-accent hover:text-accent transition-colors cursor-pointer";
+    "flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer";
   
   if (onClick) {
     return (

@@ -8,10 +8,10 @@ const FooterSection = () => {
           © 2026 Minji K. Suh
         </p>
         <div className="flex gap-4">
-          <a href="https://linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+          <a href="https://linkedin.com/in/minji-k-suh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <BsLinkedin size={18} />
           </a>
-          <a href="https://github.com/minji-code" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+          <a href="https://github.com/minji-code" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <BsGithub size={18} />
           </a>
         </div>
