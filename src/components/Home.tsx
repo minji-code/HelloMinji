@@ -6,19 +6,19 @@ import { LuMapPin } from "react-icons/lu";
 import monsteraImg from "../assets/Gemini_Generated_Image.png";
 import profilePic from "../assets/profilepic.png";
 
-const hBulbs = [
-  { x: 80,   y: 90  },
-  { x: 210,  y: 100 },
-  { x: 340,  y: 103 },
-  { x: 470,  y: 97  },
-  { x: 600,  y: 86  },
-  { x: 730,  y: 72  },
-  { x: 860,  y: 76  },
-  { x: 990,  y: 82  },
-  { x: 1110, y: 85  },
-  { x: 1240, y: 89  },
-  { x: 1360, y: 82  },
-];
+// const hBulbs = [
+//   { x: 80,   y: 90  },
+//   { x: 210,  y: 100 },
+//   { x: 340,  y: 103 },
+//   { x: 470,  y: 97  },
+//   { x: 600,  y: 86  },
+//   { x: 730,  y: 72  },
+//   { x: 860,  y: 76  },
+//   { x: 990,  y: 82  },
+//   { x: 1110, y: 85  },
+//   { x: 1240, y: 89  },
+//   { x: 1360, y: 82  },
+// ];
 
 const HomeSection: React.FC = () => {
   const [copiedMessage, setCopiedMessage] = useState<string | null>(null);
@@ -35,15 +35,15 @@ const HomeSection: React.FC = () => {
   };
 
   return (
-    <section className="min-h-[90vh] flex items-center relative overflow-hidden">
-      {/* Terra cotta diagonal strip */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-accent -skew-x-12 translate-x-20" />
+    <section className="min-h-[90vh] flex items-center relative overflow-hidden pb-16 md:pb-0">
+      {/* Terra cotta diagonal strip — hidden on mobile, narrower on md to avoid text overlap */}
+      <div className="hidden md:block absolute top-0 right-0 w-[30%] lg:w-1/3 h-full bg-accent -skew-x-12 translate-x-16 lg:translate-x-20" />
 
       {/* String lights — across top, down right side */}
-      <svg
-        className="absolute top-0 left-0 w-full h-full pointer-events-none select-none z-[3]"
-        viewBox="0 0 1440 800"
-        preserveAspectRatio="none"
+      {/* <svg
+        className="absolute top-0 left-0 w-full pointer-events-none select-none z-[3]"
+        viewBox="0 0 1440 160"
+        preserveAspectRatio="xMidYMin meet"
         aria-hidden="true"
       >
         <path
@@ -56,26 +56,26 @@ const HomeSection: React.FC = () => {
         {hBulbs.map(({ x, y }) => (
           <g key={x}>
             <line x1={x} y1={y} x2={x} y2={y + 18} stroke="#8B6B4A" strokeWidth="1" opacity="0.45" />
-            <circle cx={x} cy={y + 27} r={10} fill="#FFCB77" opacity="0.28" />
-            <circle cx={x} cy={y + 27} r={5}  fill="#FFCB77" opacity="0.9"  />
+            <circle cx={x} cy={y + 27} r={10} fill="#FFCB77" opacity="0.22" />
+            <circle cx={x} cy={y + 27} r={5}  fill="#FFCB77" opacity="0.55" />
           </g>
         ))}
-      </svg>
+      </svg> */}
 
       {/* Monstera illustration — bottom right, in front of strip */}
       <div className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none">
         <img src={monsteraImg} alt="" className="w-full h-full object-contain" />
       </div>
 
-      {/* Profile photo — at the intersection of content and strip */}
-      <div className="hidden md:block absolute right-[18%] top-1/4 -translate-y-1/2 z-20">
-        <div className="w-28 h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-muted">
-          <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover" />
+      {/* Profile photo — sits on the diagonal strip edge; pushed further right on lg to match wider strip */}
+      <div className="hidden md:block absolute right-[17%] lg:right-[19%] top-[42%] -translate-y-1/2 z-20">
+        <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-muted">
+          <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover object-top" />
         </div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10 pt-14">
+        <div className="max-w-xl md:max-w-2xl lg:max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ const HomeSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.95] mb-8"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.05] md:leading-[0.95] mb-6 md:mb-8"
           >
             Minji K.
             <br />
@@ -122,7 +122,7 @@ const HomeSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4 text-sm"
+            className="flex flex-wrap gap-2 md:gap-4 text-sm"
           >
             <ContactChip icon={<LuMapPin size={14} />} text="Atlanta, GA" />
             <ContactChip
@@ -164,7 +164,7 @@ interface ContactChipProps {
 
 const ContactChip = ({ icon, text, href, onClick }: ContactChipProps) => {
   const classes =
-    "flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer";
+    "flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-card border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-pointer whitespace-nowrap";
 
   if (onClick) {
     return (

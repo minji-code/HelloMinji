@@ -65,6 +65,12 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor targets by nav height so section headings aren't hidden behind fixed nav */
+    scroll-padding-top: 3.75rem; /* 60px ≈ h-14 + a touch of breathing room */
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);

@@ -69,7 +69,7 @@ const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16"
+          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16 relative inline-block after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-accent after:rounded-full after:-mb-2"
         >
           Core Competencies
         </motion.h2>
@@ -90,7 +90,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 bg-background border border-border rounded-md text-sm text-foreground font-body"
+                    className="px-3 py-1.5 bg-background border border-border/40 rounded-md text-sm text-foreground font-body transition-all duration-150 hover:-translate-y-0.5 hover:border-primary/60 hover:shadow-sm cursor-default"
                   >
                     {skill}
                   </span>

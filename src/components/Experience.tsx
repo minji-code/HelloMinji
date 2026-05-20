@@ -77,14 +77,14 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-36 bg-white relative overflow-hidden" id="experience">
+    <section className="py-24 bg-white relative overflow-hidden" id="experience">
       <img src={fiddle} alt="" aria-hidden="true" className="absolute bottom-0 right-0 w-44 lg:w-56 opacity-20 mix-blend-multiply pointer-events-none select-none" />
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16"
+          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16 relative inline-block after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-accent after:rounded-full after:-mb-2"
         >
           Experience
         </motion.h2>
@@ -108,16 +108,17 @@ const ExperienceSection = () => {
               <div className="border-l-2 border-accent/30 pl-6 space-y-10">
                 {exp.roles.map((role) => (
                   <div key={role.title}>
-                    <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
-                      <h4 className="font-display font-semibold text-foreground flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-accent -ml-[1.85rem] mr-2 shrink-0" />
+                    <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-4">
+                      {/* Dot is absolutely positioned relative to the border-l container */}
+                      <h4 className="font-display font-semibold text-foreground flex items-center gap-3 relative">
+                        <span className="absolute -left-[1.85rem] w-2.5 h-2.5 rounded-full bg-accent ring-2 ring-background shrink-0" />
                         {role.title}
                       </h4>
-                      <span className="text-muted-foreground text-sm">{role.period}</span>
+                      <span className="text-muted-foreground text-sm md:ml-4 shrink-0">{role.period}</span>
                     </div>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2.5">
                       {role.bullets.map((bullet, j) => (
-                        <li key={j} className="text-muted-foreground text-sm leading-relaxed pl-1">
+                        <li key={j} className="text-muted-foreground text-[0.8375rem] leading-[1.65] pl-1 before:content-['–'] before:mr-2 before:text-accent/60">
                           {bullet}
                         </li>
                       ))}

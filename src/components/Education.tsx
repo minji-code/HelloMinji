@@ -5,7 +5,7 @@ import sprig from "../assets/SCR-20260520-oazd.png";
 
 const EducationSection = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden" id="education">
+    <section className="py-16 bg-white relative overflow-hidden" id="education">
       <img src={branch} alt="" aria-hidden="true" className="absolute top-4 -right-2 w-20 lg:w-28 opacity-[0.35] mix-blend-multiply pointer-events-none select-none rotate-[8deg]" />
       <img src={sprig} alt="" aria-hidden="true" className="absolute -bottom-2 left-6 w-16 lg:w-20 opacity-[0.35] mix-blend-multiply pointer-events-none select-none -rotate-[15deg]" />
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
@@ -13,7 +13,7 @@ const EducationSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16"
+          className="font-display text-3xl md:text-4xl font-bold text-primary mb-16 relative inline-block after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-accent after:rounded-full after:-mb-2"
         >
           Education
         </motion.h2>
@@ -24,7 +24,7 @@ const EducationSection = () => {
           viewport={{ once: true }}
           className="flex items-start gap-5"
         >
-          <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 ring-1 ring-accent/20">
             <PiGraduationCap className="text-primary" size={24} />
           </div>
           <div>
