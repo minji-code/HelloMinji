@@ -20,6 +20,13 @@ import profilePic from "../assets/profilepic.png";
 //   { x: 1360, y: 82  },
 // ];
 
+const EASE = [0.25, 0.1, 0.25, 1] as const;
+
+const wordVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE } },
+};
+
 const HomeSection: React.FC = () => {
   const [copiedMessage, setCopiedMessage] = useState<string | null>(null);
 
@@ -62,54 +69,63 @@ const HomeSection: React.FC = () => {
         ))}
       </svg> */}
 
-      {/* Monstera illustration — bottom right, in front of strip */}
-      <div className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none">
+      {/* Monstera illustration — bottom right, gentle float */}
+      <motion.div
+        className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none"
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
         <img src={monsteraImg} alt="" className="w-full h-full object-contain" />
-      </div>
+      </motion.div>
 
       {/* Profile photo — sits on the diagonal strip edge; pushed further right on lg to match wider strip */}
       <div className="hidden md:block absolute right-[17%] lg:right-[19%] top-[42%] -translate-y-1/2 z-20">
-        <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-muted">
+        <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-primary">
           <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover object-top" />
         </div>
       </div>
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10 pt-14">
         <div className="max-w-xl md:max-w-2xl lg:max-w-4xl">
+          {/* Eyebrow: slide in from left + fade */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: EASE }}
           >
             <p className="font-display text-primary font-semibold tracking-widest uppercase text-sm mb-4">
               Technical Program Manager
             </p>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+          {/* Name: stagger each word/line */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.05] md:leading-[0.95] mb-6 md:mb-8"
           >
-            Minji K.
-            <br />
-            <span className="text-primary">Suh</span>
-          </motion.h1>
+            <motion.div variants={wordVariants}>Minji K.</motion.div>
+            <motion.div variants={wordVariants}>
+              <span className="text-primary">Suh</span>
+            </motion.div>
+          </motion.div>
 
+          {/* Bio paragraph */}
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.55, delay: 0.4, ease: EASE }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed"
           >
             Shipped production AI/ML systems and full-stack SaaS platforms as both engineer and TPM — now driving cross-functional delivery at the intersection of infra, data, and product.
           </motion.p>
 
+          {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
+            transition={{ duration: 0.55, delay: 0.55, ease: EASE }}
             className="mb-10"
           >
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-semibold tracking-wide">
@@ -118,10 +134,11 @@ const HomeSection: React.FC = () => {
             </span>
           </motion.div>
 
+          {/* Contact chips */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.55, delay: 0.55, ease: EASE }}
             className="flex flex-wrap gap-2 md:gap-4 text-sm"
           >
             <ContactChip icon={<LuMapPin size={14} />} text="Atlanta, GA" />
