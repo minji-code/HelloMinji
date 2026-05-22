@@ -70,19 +70,20 @@ const HomeSection: React.FC = () => {
       </svg> */}
 
       {/* Monstera illustration — bottom right, gentle float */}
-      <motion.div
-        className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none"
-        animate={{ y: [0, -6, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      >
+      <div className="hidden md:block absolute bottom-0 right-0 w-56 lg:w-72 z-10 pointer-events-none select-none">
         <img src={monsteraImg} alt="" className="w-full h-full object-contain" />
-      </motion.div>
+      </div>
 
       {/* Profile photo — sits on the diagonal strip edge; pushed further right on lg to match wider strip */}
       <div className="hidden md:block absolute right-[17%] lg:right-[19%] top-[42%] -translate-y-1/2 z-20">
-        <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-primary">
-          <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover object-top" />
-        </div>
+        <motion.div
+          animate={{ y: [0, -6, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden ring-4 ring-background shadow-2xl bg-primary">
+            <img src={profilePic} alt="Minji K. Suh" className="w-full h-full object-cover object-top" />
+          </div>
+        </motion.div>
       </div>
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10 pt-14">
