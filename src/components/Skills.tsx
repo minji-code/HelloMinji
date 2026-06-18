@@ -39,6 +39,7 @@ const skillCategories = [
       "Cross-functional Team Leadership",
       "Executive & Cross-functional Stakeholder Management",
       "Parallel Workstream / Multi-Pipeline Delivery",
+      "Data Flow & Architecture Documentation",
     ],
   },
   {
@@ -46,7 +47,7 @@ const skillCategories = [
     skills: [
       "System Design",
       "AI/ML Pipeline Architecture",
-      "LLM Orchestration Design",
+      "LLM Orchestration (MCP)",
       "API Design (REST)",
       "Frontend/Backend Integration",
       "CI/CD Pipelines",
@@ -60,6 +61,8 @@ const skillCategories = [
       "Agile",
       "Scrum",
       "Kanban",
+      "Structured Discovery & Requirements Lifecycle",
+      "Sprint Process Design",
       "Sprint Planning",
       "Root Cause Analysis (RCA)",
       "Technical Requirement Document (TRD) Authoring",
@@ -70,15 +73,17 @@ const skillCategories = [
   {
     title: "Tools & Infrastructure",
     skills: [
+      "TypeScript",
+      "React / Next.js",
+      "AWS (SQS · DynamoDB · Lambda · Amplify · CloudFront)",
+      "PostgreSQL / PostGIS",
       "Jira",
-      "Confluence",
       "GitHub",
-      "Microsoft Teams",
-      "SharePoint",
-      "AWS (Amplify/S3)",
+      "Confluence",
       "Git (Branching/Rebasing)",
       "Postman",
-      "MySQL/PostgreSQL",
+      "Microsoft Teams",
+      "SharePoint",
     ],
   },
   {
