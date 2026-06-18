@@ -33,7 +33,7 @@ const experiences = [
         bullets: [
           "Owns discovery-to-delivery for 4–5 significant initiatives in parallel — running stakeholder sessions, capturing transcripts, and authoring PRDs and functional baselines through versioned iterations (v1 → v2) as scope decisions solidify.",
           "Designed and documented the engineering team's sprint/scrum process from scratch: 2-week cadence, bottom-up date-setting, story point estimation, backlog grooming rhythm, and retrospective cycle.",
-          "Coordinates 7 engineers across frontend, data, infrastructure, and R&D specialties — tracking epic ownership, phase transitions, and workstream sequencing across 4–5 parallel significant epics with multi-month delivery timelines.",
+          "Coordinates 10+ engineers across frontend, data, infrastructure, and R&D specialties — tracking epic ownership, phase transitions, and workstream sequencing across 4–5 parallel significant epics with multi-month delivery timelines.",
           "Publishes bi-weekly engineering epic status reports covering 8+ active epics and a 20+ item backlog — including phase history tables, timeline visualizations, on-hold rationale, and risk flags with suggested remediation.",
           "Manages formal scope change: maintains a deferred features log (DEFER-XX), documents milestone scope decisions, and publishes SOW scope change statements to keep vendor alignment intact through architectural pivots.",
           "Authors end-to-end data flow documentation for multi-stage AI/CV pipelines — covering IoT ingestion (SQS), LLM orchestration, MCP tool execution, HIL routing, DynamoDB writes, and PostGIS integration — with explicit ownership boundaries across top-down and bottom-up pipelines.",
