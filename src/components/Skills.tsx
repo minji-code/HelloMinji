@@ -47,6 +47,7 @@ const skillCategories = [
     skills: [
       "System Design",
       "AI/ML Pipeline Architecture",
+      "Computer Vision Pipelines",
       "LLM Orchestration (MCP)",
       "API Design (REST)",
       "Frontend/Backend Integration",
@@ -77,6 +78,8 @@ const skillCategories = [
       "React / Next.js",
       "AWS (SQS · DynamoDB · Lambda · Amplify · CloudFront)",
       "PostgreSQL / PostGIS",
+      "Geospatial Data (Shapefiles · GeoJSON)",
+      "IoT / Fleet Hardware",
       "Jira",
       "GitHub",
       "Confluence",
