@@ -118,7 +118,9 @@ const ExperienceSection = () => {
                 <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
                   {exp.company}
                 </h3>
-                <span className="text-muted-foreground text-sm mt-1 md:mt-0">{exp.period}</span>
+                {exp.roles.length > 1 && (
+                  <span className="text-muted-foreground text-sm mt-1 md:mt-0">{exp.period}</span>
+                )}
               </motion.div>
 
               {/* Timeline line — scaleY reveal */}
