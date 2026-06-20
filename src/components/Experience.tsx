@@ -29,25 +29,13 @@ const experiences = [
     roles: [
       {
         title: "Technical Program Manager",
-        period: "Feb 2026 – Present",
+        period: "Dec 2022 – Present",
         bullets: [
-          "Owns discovery-to-delivery for 4–5 significant initiatives in parallel — running stakeholder sessions, capturing transcripts, and authoring PRDs and functional baselines through versioned iterations (v1 → v2) as scope decisions solidify.",
-          "Designed and documented the engineering team's sprint/scrum process from scratch: 2-week cadence, bottom-up date-setting, story point estimation, backlog grooming rhythm, and retrospective cycle.",
-          "Coordinates 10+ engineers across frontend, data, infrastructure, and R&D specialties — tracking epic ownership, phase transitions, and workstream sequencing across 4–5 parallel significant epics with multi-month delivery timelines.",
-          "Publishes bi-weekly engineering epic status reports covering 8+ active epics and a 20+ item backlog — including phase history tables, timeline visualizations, on-hold rationale, and risk flags with suggested remediation.",
-          "Manages formal scope change: maintains a deferred features log (DEFER-XX), documents milestone scope decisions, and publishes SOW scope change statements to keep vendor alignment intact through architectural pivots.",
-          "Authors end-to-end data flow documentation for multi-stage AI/CV pipelines — covering IoT ingestion (SQS), LLM orchestration, MCP tool execution, HIL routing, DynamoDB writes, and PostGIS integration — with explicit ownership boundaries across top-down and bottom-up pipelines.",
-          "Tracks production deployments to government agency pilots, authors HIL review ops runbooks, and contributes directly to the production Next.js web app — shipping the photo viewer, history navigation, and road PCI score table updates.",
-        ],
-      },
-      {
-        title: "Software Engineer",
-        period: "Dec 2022 – Jan 2026",
-        bullets: [
-          "Executed a full-stack production migration from Laravel to React/Next.js, eliminating legacy technical debt and establishing a component-based architecture that measurably accelerated subsequent feature delivery cycles.",
-          "Architected performance-optimized UI components and REST API endpoints alongside a database schema refactor, directly cutting query latency and improving page render times across the platform.",
-          "Led production incident response — diagnosing root causes, deploying hotfixes, and documenting resolution patterns that reduced repeat incidents across the platform.",
-          "Defined and drove adoption of Git branching and code review standards across the engineering org, and authored onboarding documentation that measurably shortened new engineer ramp-up time.",
+          "Owns discovery-to-delivery for 4–5 significant initiatives in parallel — running stakeholder sessions, authoring PRDs and functional baselines through versioned iterations (v1 → v2), and managing formal scope change across SOW milestones.",
+          "Designed the engineering team's sprint/scrum process from scratch: 2-week cadence, bottom-up date-setting, story point estimation, backlog grooming rhythm, and retrospective cycle.",
+          "Coordinates 10+ engineers across frontend, data, infrastructure, and R&D — tracking epic ownership, phase transitions, and workstream sequencing across parallel significant epics with multi-month delivery timelines.",
+          "Authors end-to-end data flow documentation for multi-stage AI/CV pipelines — covering IoT ingestion (SQS), LLM orchestration, MCP tool execution, HIL routing, DynamoDB writes, and PostGIS integration — with explicit ownership boundaries.",
+          "Led full-stack production migration from Laravel to React/Next.js; continues contributing directly to the codebase — shipping the photo viewer, history navigation, and road PCI score table updates.",
         ],
       },
     ],
