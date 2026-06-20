@@ -46,22 +46,12 @@ const experiences = [
     roles: [
       {
         title: "Instructional Design Consultant",
-        period: "Aug 2020 – Jun 2022",
-        bullets: [
-          "Scoped enterprise client engagements by authoring custom Statements of Work, translating ambiguous regulatory and technical requirements into discrete, deliverable-bound project phases.",
-          "Partnered with Legal, Security, and SMEs to develop technical eLearning courses — including Incident Preparedness and Data Privacy — delivering compliant training content to enterprise clients.",
-          "Built a suite of operational artifacts — software usage guidelines, project procedure playbooks, and product enhancement trackers — that standardized delivery workflows across the department.",
-          "Synthesized product performance metrics and stakeholder feedback into prioritized improvement recommendations, driving iterative product updates across multiple release cycles.",
-        ],
-      },
-      {
-        title: "Implementation Consultant",
-        period: "Jan 2020 – Aug 2020",
+        period: "Jan 2020 – Jun 2022",
         bullets: [
           "Owned end-to-end implementation programs for enterprise clients — managing project plans, milestone gates, and executive-facing status communication — delivering platform go-lives on schedule across multiple concurrent accounts.",
-          "Translated enterprise field issues into structured product requirements delivered directly to Product Management, driving concrete customer requirements into the roadmap backlog across multiple release cycles.",
-          "Engineered custom technical workarounds during enterprise onboarding, resolving product gaps that allowed clients to go live on schedule without waiting for roadmap fixes.",
-          "Advised enterprise clients on GDPR/CCPA compliance implementation within their existing technical frameworks and system constraints.",
+          "Scoped client engagements by authoring custom Statements of Work, translating regulatory and technical requirements into discrete, deliverable-bound project phases.",
+          "Translated enterprise field issues into structured product requirements delivered directly to Product Management, driving customer requirements into the roadmap across multiple release cycles.",
+          "Built operational artifacts — software usage guidelines, project procedure playbooks, and product enhancement trackers — that standardized delivery workflows across the department.",
         ],
       },
     ],
